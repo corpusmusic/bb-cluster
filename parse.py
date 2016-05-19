@@ -92,6 +92,33 @@ def get_title(song):
     title = line[line.index(':') + 2:-1]
     return title
 
+def get_artist(song):
+    fs = open(song)
+    line = fs.readline()
+    while 'artist' not in line:
+        line = fs.readline()
+    artist = line[line.index(':') + 2:-1]
+    return artist
+
+def get_metre(song):
+    fs = open(song)
+    line = fs.readline()
+    while 'metre' not in line:
+        line = fs.readline()
+    metre = line[line.index(':') + 2:-1]
+    return metre
+
+def get_year(root):
+    filelist = []
+    with open((root + '/BBIndex.csv'), 'rb') as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        for entry in reader:
+            if entry[4]:
+                filelist.append(str(entry[1][0:4]))
+    filelist.pop(0)
+    #print filelist
+    return filelist
+
 def get_chord_quality(chordList):
 	qualityList = []
 	for chord in chordList:
@@ -117,6 +144,9 @@ def update_key(line, tonic):
 if __name__ == '__main__':
     """Write an example csv to play with for the analysis code."""
     filenames = corpus_list(ROOT_DIR)
+    yearArray = get_year(ROOT_DIR)
+    yearCounter = -1
+
     relative_chords = []
 
     with open('chord_by_chord.csv', 'wb') as csvfile:
@@ -125,16 +155,24 @@ if __name__ == '__main__':
             tonic = get_tonic(song)
             songfile = open(song)
             titleList = []
+            artistList = []
+            yearList = []
+            metreList = []
             chordList = []
             relativeChordList = []
             relativeRNList =[]
             chordQualityList = []
+            yearCounter += 1
+            year = yearArray[yearCounter]
+            #print year
 
             for line in songfile:
                 chordsInPhrase =  get_chord_sequence(line)
                 roman =  get_roman(tonic,chordsInPhrase)
                 relroot =  get_relroot(tonic,chordsInPhrase)
                 title = [get_title(song).replace(" ","")]*len(chordsInPhrase)
+                artist = [get_artist(song).replace(" ","")]*len(chordsInPhrase)
+                metre = [get_metre(song).replace(" ","")]*len(chordsInPhrase)
                 chordQualities = get_chord_quality(chordsInPhrase)
 
                 repeats = get_repeats(line)
@@ -142,11 +180,14 @@ if __name__ == '__main__':
                 tonic = update_key(line,tonic)
 
                 titleList += title*repeats
+                artistList += artist*repeats
+                yearList.append(year)
+                metreList += metre*repeats
                 chordList +=  chordsInPhrase*repeats
                 relativeChordList += relroot*repeats
                 relativeRNList += roman*repeats
                 chordQualityList += chordQualities*repeats
 
-            for title, lead_sheet, rel_chords, roman_num, quality in zip(titleList,chordList,relativeChordList,relativeRNList,chordQualityList):
-                writer.writerow([title, lead_sheet, rel_chords, roman_num, quality])
+            for title, artist, year, metre, lead_sheet, rel_chords, roman_num, quality in zip(titleList,artistList, yearList, metreList, chordList,relativeChordList,relativeRNList,chordQualityList):
+                writer.writerow([title, artist, year, metre, lead_sheet, rel_chords, roman_num, quality])
             writer.writerow([])
