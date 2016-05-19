@@ -6,5 +6,5 @@
 
 ##Duties
 1. Edit parse.py to mainly remove repeating chords from consideration.
-  * Columns now included: song, year, artist, metre, 0-11 chord root, chord symbol, quality.
+  * Columns now included: song, year, artist, metre, 0-11 chord root, roman numeral form, chord symbol, quality.
 2.
