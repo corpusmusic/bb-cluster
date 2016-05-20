@@ -7,4 +7,6 @@
 ##Duties
 1. Edit parse.py to mainly remove repeating chords from consideration.
   * Columns now included: song, year, artist, metre, 0-11 chord root, roman numeral form, chord symbol, quality.
-2.
+2. Edit readdata to include our new columns  
+3. Edit transitionprob.py to no longer include repeated chord probabilities
+4. Change output file name to something intuitive 
