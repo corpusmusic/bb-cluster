@@ -24,9 +24,10 @@ def transition_probs_by_song(chord_lists):
 
         # for every chord in the list of chords, count all the transitions and root occurances
         for i in range(length-1):
-            transition = (chords[i]['root'], chords[i+1]['root'])
-            transition_counts[transition] += 1
-            chord_counts[chords[i]['root']] += 1
+            if chords[i]['roman'] != chords[i+1]['roman']:
+                transition = (chords[i]['roman'], chords[i+1]['roman'])
+                transition_counts[transition] += 1
+                chord_counts[chords[i]['roman']] += 1
 
         # add the transition probabilities for this song into a giant dictionary
         song_transition_probs[chords[i]['song_name']] = get_transition_probs(chord_counts, transition_counts)
@@ -49,12 +50,13 @@ def get_transition_probs(chord_counts, transition_counts):
     for first in RN:
         for second in RN:
 
-            # use try catch to avoid divide by 0 errors or key errors
+
+        # use try catch to avoid divide by 0 errors or key errors
             try:
                 probability = transition_counts[(first, second)] / chord_counts[first]
                 probs[(first, second)] = probability
 
-            # if a transition isn't found in the data, give it probability 0
+        # if a transition isn't found in the data, give it probability 0
             except:
                 probs[(first, second)] = 0
     return probs
@@ -85,9 +87,9 @@ if __name__ == '__main__':
 
     write_csv(transition_probs)
 
-    for song_name, probs in transition_probs.items():
-        print song_name + '\n' + ('-' * len(song_name))
 
+    for song_name, probs in transition_probs.items():
+        #print song_name + '\n' + ('-' * len(song_name))
         # map roman numerals to integers for sorting, and covert back to display
         # this isn't actually necessary, just makes printing the results look nicer
         transitions = [(RN.index(c1), RN.index(c2)) for c1, c2 in probs]
