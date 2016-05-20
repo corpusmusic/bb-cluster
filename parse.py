@@ -6,7 +6,7 @@ import csv
 
 from collections import defaultdict, deque
 
-ROOT_DIR = '../BB'
+ROOT_DIR = '../McGill-BillBoard'  #make sure you download the BB corpus into the same root folder as the repository
 KEYS = [{'A'}, {'A#', 'Bb'}, {'B', 'Cb'}, {'C'}, {'C#', 'Db'}, {'D'}, {'D#', 'Eb'}, {'E', 'Fb'}, {'F'}, {'F#', 'Gb'}, {'G'}, {'G#', 'Ab'}]
 RN = ['I', 'bII', 'II', 'bIII', 'III', 'IV', 'bV', 'V', 'bVI', 'VI', 'bVII', 'VII']
 chromaticRelativeRoot = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -14,7 +14,7 @@ chromaticRelativeRoot = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 def corpus_list(root):
     """Return a list of all paths to the salami text files, relative to the root directory of the project."""
     filelist = []
-    with open((root + '/BBIndex.csv'), 'rb') as csvfile:
+    with open((root + '/billboard-2.0-index.csv'), 'rb') as csvfile: #make sure index file is in ROOT_DIR folder
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for entry in reader:
             if entry[4]:
@@ -110,7 +110,7 @@ def get_metre(song):
 
 def get_year(root):
     filelist = []
-    with open((root + '/BBIndex.csv'), 'rb') as csvfile:
+    with open((root + '/billboard-2.0-index.csv'), 'rb') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for entry in reader:
             if entry[4]:
@@ -192,8 +192,9 @@ if __name__ == '__main__':
                 writer.writerow([title, artist, year, metre, lead_sheet, rel_chords, roman_num, quality])
             writer.writerow([])
 
+    yearCounter = -1
     with open('song_metadata.csv', 'wb') as csvfile:
-    writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for song in filenames:
             tonic = get_tonic(song)
             songfile = open(song)
