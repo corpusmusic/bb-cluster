@@ -62,8 +62,8 @@ def get_transition_probs(chord_counts, transition_counts):
     return probs
 
 def write_csv(probabilities):
-    with open('output.csv', 'wb') as csvfile:
-        writer = csv.writer(csvfile, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    with open('songbysongtransprob.csv', 'wb') as csvfile:
+        writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for song_name, probs in transition_probs.items():
 
             # get all probabilities in sorted order, and get rid of non-harmonic transitions
