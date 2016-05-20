@@ -34,9 +34,9 @@ km.fit(X,Y)
 #        writer.writerow([title, cluster])
 #    writer.writerow([])
 
-dict = {}
+clusterIdOfSong = {}
 for title, cluster in zip(Y, km.labels_):
-    dict[title] = cluster
+    clusterIdOfSong[title] = cluster
 
 def get_cluster(title):
-    return dict[title]
+    return clusterIdOfSong[title]
