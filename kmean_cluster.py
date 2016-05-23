@@ -80,4 +80,4 @@ with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
             writer.writerow(song)
 
 os.remove('cluster_chord_by_chord.csv')
-os.remove('cluster_songbysongtransprob.csv')
+#os.remove('cluster_songbysongtransprob.csv')
