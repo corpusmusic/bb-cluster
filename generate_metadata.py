@@ -23,7 +23,7 @@ if __name__ == '__main__':
     try:
         datafile = sys.argv[1]
     except:
-        datafile = 'final_cluster_chord_by_chord.csv'
+        datafile = 'new_cluster_chord_by_chord.csv'
 
     inputdata = read_data(datafile)
     outputdata = []
