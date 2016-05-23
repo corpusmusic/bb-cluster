@@ -23,12 +23,12 @@ if __name__ == '__main__':
     try:
         datafile = sys.argv[1]
     except:
-        datafile = 'new_chord_by_chord.csv'
+        datafile = 'final_cluster_chord_by_chord.csv'
 
     inputdata = read_data(datafile)
     outputdata = []
     uniquesongs = []
-    header = ['song', 'artist', 'year', 'meter', 'leadSheet', 'chrRoot', 'roman', 'quality', 'cluster15'] #add gaussian when ready
+    header = ['song', 'artist', 'year', 'meter', 'leadSheet', 'chrRoot', 'roman', 'quality', 'cluster15', 'cluster6'] #add kmeans6 when ready
     outputdata.append(header)
     for line in inputdata:
         outputdata.append(line)

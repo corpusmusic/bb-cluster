@@ -23,17 +23,17 @@ if __name__ == '__main__':
     try:
         datafile = sys.argv[1]
     except:
-        datafile = 'new_chord_by_chord.csv'
+        datafile = 'final_cluster_chord_by_chord.csv'
 
     inputdata = read_data(datafile)
     outputdata = []
     uniquesongs = []
-    header = ['song', 'artist', 'year', 'meter', 'cluster15'] #add gaussian when ready
+    header = ['song', 'artist', 'year', 'meter', 'cluster15','cluster6'] #add kmeans6 when ready
     outputdata.append(header)
     for line in inputdata:
         if line[0] not in uniquesongs:
             uniquesongs.append(line[0])
-            songmeta = [line[0], line[1], line[2], line[3], line[8]] # add line[9] when gaussian is ready
+            songmeta = [line[0], line[1], line[2], line[3], line[8], line[9]] # add line[9] when kmeans6 is ready
             outputdata.append(songmeta)
 
     write_csv(outputdata, 'metadata_with_clusters.csv')
