@@ -15,10 +15,6 @@ def read_data(filename):
     with open(filename, 'rB') as csvf:
         return [row for row in csv.reader(csvf)]
 
-clusterIdOfSong = {}
-for title, cluster in zip(Y, km.labels_):
-    clusterIdOfSong[title] = cluster
-
 def get_cluster(title):
     return clusterIdOfSong[title]
 
@@ -32,12 +28,18 @@ K = 15 #number of clusters
 km = KMeans(n_clusters = K)
 km.fit(X,Y)
 
+clusterIdOfSong = {}
+for title, cluster in zip(Y, km.labels_):
+    clusterIdOfSong[title] = cluster
+
 csvfile = 'song_metadata.csv'
 with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
-    reader = csv.reader(fin, newline='', lineterminator='\n')
-    writer = csv.writer(fout, newline='', lineterminator='\n')
-    for row in reader:
-        writer.writerow(row + get_cluster(row[0]))
+    reader = csv.reader(fin, lineterminator='\n')
+    writer = csv.writer(fout, lineterminator='\n')
+    for song in reader:
+        print(song[0])
+        song.append(get_cluster(song[0]))
+        writer.writerow(song)
 #code that prints cluster information and writes info to a CSV with title/cluster
 #print(km.labels_)
 #print(km.cluster_centers_[1])
