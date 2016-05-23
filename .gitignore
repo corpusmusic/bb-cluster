@@ -61,4 +61,9 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
+# Mac
 .DS_Store
+
+# R
+.RData
+.RHistory
