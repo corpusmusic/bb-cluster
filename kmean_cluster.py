@@ -40,7 +40,7 @@ with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:
             writer.writerow(song)
 
 csvfile2 = 'songbysongtransprob.csv'
-with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:
+with open(csvfile2, 'rb') as fin, open('cluster_'+csvfile2, 'wb') as fout:
     reader = csv.reader(fin, lineterminator='\n')
     writer = csv.writer(fout, lineterminator='\n')
     for song in reader:
@@ -71,7 +71,7 @@ with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
             writer.writerow(song)
 
 csvfile2 = 'cluster_songbysongtransprob.csv'
-with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
+with open(csvfile2, 'rb') as fin, open('new_'+csvfile2, 'wb') as fout:
     reader = csv.reader(fin, lineterminator='\n')
     writer = csv.writer(fout, lineterminator='\n')
     for song in reader:
@@ -79,5 +79,5 @@ with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
             song.append(get_cluster(song[0]))
             writer.writerow(song)
 
-os.remove('cluster_chord_by_chord.csv')
+#os.remove('cluster_chord_by_chord.csv')
 #os.remove('cluster_songbysongtransprob.csv')
