@@ -5,12 +5,6 @@ import os
 import scipy as sp
 from sklearn.cluster import KMeans
 
-#open transition prob csv file
-#with open('songbysongtransprob.csv','rb') as csvf:
-#    rows = csv.reader(csvf)
-#    for row in rows:
-#        print row
-
 def read_data(filename):
     with open(filename, 'rB') as csvf:
         return [row for row in csv.reader(csvf)]
@@ -24,6 +18,8 @@ for song in X:
     Y.append(song[0])
     song.pop(0)
 
+
+"""15 Cluster K-Means Analysis"""
 K = 15 #number of clusters
 km = KMeans(n_clusters = K)
 km.fit(X,Y)
@@ -32,7 +28,40 @@ clusterIdOfSong = {}
 for title, cluster in zip(Y, km.labels_):
     clusterIdOfSong[title] = cluster
 
+"""Write temp file outputs"""
+
 csvfile = 'chord_by_chord.csv'
+with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:
+    reader = csv.reader(fin, lineterminator='\n')
+    writer = csv.writer(fout, lineterminator='\n')
+    for song in reader:
+        if len(song) > 0:
+            song.append(get_cluster(song[0]))
+            writer.writerow(song)
+
+csvfile2 = 'songbysongtransprob.csv'
+with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:
+    reader = csv.reader(fin, lineterminator='\n')
+    writer = csv.writer(fout, lineterminator='\n')
+    for song in reader:
+        if len(song) > 0:
+            song.append(get_cluster(song[0]))
+            writer.writerow(song)
+
+
+"""6 Cluster K-Means Analysis"""
+K = 6 #number of clusters
+km = KMeans(n_clusters = K)
+km.fit(X,Y)
+
+clusterIdOfSong = {}
+for title, cluster in zip(Y, km.labels_):
+    clusterIdOfSong[title] = cluster
+
+
+"""Write final file outputs with K=6 and K=15 cluster output appends"""
+
+csvfile = 'cluster_chord_by_chord.csv'
 with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
     reader = csv.reader(fin, lineterminator='\n')
     writer = csv.writer(fout, lineterminator='\n')
@@ -40,12 +69,15 @@ with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
         if len(song) > 0:
             song.append(get_cluster(song[0]))
             writer.writerow(song)
-#code that prints cluster information and writes info to a CSV with title/cluster
-#print(km.labels_)
-#print(km.cluster_centers_[1])
-#with open('song_cluster_kMeans.csv', 'wb') as csvfile:
-#    writer = csv.writer(csvfile, delimiter=str(u','), quotechar=str(u'"'), quoting=csv.QUOTE_MINIMAL)
-#
-#    for title, cluster in zip(Y, km.labels_):
-#        writer.writerow([title, cluster])
-#    writer.writerow([])
+
+csvfile2 = 'cluster_songbysongtransprob.csv'
+with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
+    reader = csv.reader(fin, lineterminator='\n')
+    writer = csv.writer(fout, lineterminator='\n')
+    for song in reader:
+        if len(song) > 0:
+            song.append(get_cluster(song[0]))
+            writer.writerow(song)
+
+os.remove('cluster_chord_by_chord.csv')
+os.remove('cluster_songbysongtransprob.csv')
