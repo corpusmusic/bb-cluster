@@ -32,14 +32,14 @@ clusterIdOfSong = {}
 for title, cluster in zip(Y, km.labels_):
     clusterIdOfSong[title] = cluster
 
-csvfile = 'song_metadata.csv'
+csvfile = 'chord_by_chord.csv'
 with open(csvfile, 'rb') as fin, open('new_'+csvfile, 'wb') as fout:
     reader = csv.reader(fin, lineterminator='\n')
     writer = csv.writer(fout, lineterminator='\n')
     for song in reader:
-        print(song[0])
-        song.append(get_cluster(song[0]))
-        writer.writerow(song)
+        if len(song) > 0:
+            song.append(get_cluster(song[0]))
+            writer.writerow(song)
 #code that prints cluster information and writes info to a CSV with title/cluster
 #print(km.labels_)
 #print(km.cluster_centers_[1])
