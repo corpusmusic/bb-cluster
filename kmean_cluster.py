@@ -21,7 +21,7 @@ for song in X:
 
 """15 Cluster K-Means Analysis"""
 K = 15 #number of clusters
-km = KMeans(n_clusters = K)
+km = KMeans(n_clusters = K, n_init = 10000)
 km.fit(X,Y)
 
 clusterIdOfSong = {}
@@ -51,7 +51,7 @@ with open(csvfile2, 'rb') as fin, open('cluster_'+csvfile2, 'wb') as fout:
 
 """6 Cluster K-Means Analysis"""
 K = 6 #number of clusters
-km = KMeans(n_clusters = K)
+km = KMeans(n_clusters = K, n_init = 10000)
 km.fit(X,Y)
 
 clusterIdOfSong = {}
