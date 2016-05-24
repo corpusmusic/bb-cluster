@@ -149,4 +149,196 @@ cluster15_2_matrix
 plot(cluster15_2_matrix)
 cluster15_2$V1
 
+#K = 15, cluster 15_3     
+cluster15_3 <- bb[which(bb$V146 == '3'),]
+summary(cluster15_3)
+length(cluster15_3)
+cluster15_3_avg = colMeans(cluster15_3[c(2:145)])
+plot(cluster15_3_avg)
+#Table creation
+cluster15_3_matrix <- matrix(cluster15_3_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_3_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_3_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_3_matrix <- as.table(cluster15_3_matrix)
+cluster15_3_matrix <- as.table(cluster15_3_matrix)
+cluster15_3_matrix
+plot(cluster15_3_matrix)
+cluster15_3$V1
+
+#K = 15, cluster 15_4     
+cluster15_4 <- bb[which(bb$V146 == '4'),]
+summary(cluster15_4)
+length(cluster15_4)
+cluster15_4_avg = colMeans(cluster15_4[c(2:145)])
+plot(cluster15_4_avg)
+#Table creation
+cluster15_4_matrix <- matrix(cluster15_4_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_4_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_4_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_4_matrix <- as.table(cluster15_4_matrix)
+cluster15_4_matrix <- as.table(cluster15_4_matrix)
+cluster15_4_matrix
+plot(cluster15_4_matrix)
+cluster15_4$V1
+
+#K = 15, cluster 15_5     
+cluster15_5 <- bb[which(bb$V146 == '5'),]
+summary(cluster15_5)
+length(cluster15_5)
+cluster15_5_avg = colMeans(cluster15_5[c(2:145)])
+plot(cluster15_5_avg)
+#Table creation
+cluster15_5_matrix <- matrix(cluster15_5_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_5_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_5_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_5_matrix <- as.table(cluster15_5_matrix)
+cluster15_5_matrix <- as.table(cluster15_5_matrix)
+cluster15_5_matrix
+plot(cluster15_5_matrix)
+cluster15_5$V1
+
+#K = 15, cluster 15_6     
+cluster15_6 <- bb[which(bb$V146 == '6'),]
+summary(cluster15_6)
+length(cluster15_6)
+cluster15_6_avg = colMeans(cluster15_6[c(2:145)])
+plot(cluster15_6_avg)
+#Table creation
+cluster15_6_matrix <- matrix(cluster15_6_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_6_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_6_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_6_matrix <- as.table(cluster15_6_matrix)
+cluster15_6_matrix <- as.table(cluster15_6_matrix)
+cluster15_6_matrix
+plot(cluster15_6_matrix)
+cluster15_6$V1
+
+#K = 15, cluster 15_7     
+cluster15_7 <- bb[which(bb$V146 == '7'),]
+summary(cluster15_7)
+length(cluster15_7)
+cluster15_7_avg = colMeans(cluster15_7[c(2:145)])
+plot(cluster15_7_avg)
+#Table creation
+cluster15_7_matrix <- matrix(cluster15_7_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_7_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_7_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_7_matrix <- as.table(cluster15_7_matrix)
+cluster15_7_matrix <- as.table(cluster15_7_matrix)
+cluster15_7_matrix
+plot(cluster15_7_matrix)
+cluster15_7$V1
+
+#K = 15, cluster 15_8     
+cluster15_8 <- bb[which(bb$V146 == '8'),]
+summary(cluster15_8)
+length(cluster15_8)
+cluster15_8_avg = colMeans(cluster15_8[c(2:145)])
+plot(cluster15_8_avg)
+#Table creation
+cluster15_8_matrix <- matrix(cluster15_8_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_8_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_8_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_8_matrix <- as.table(cluster15_8_matrix)
+cluster15_8_matrix <- as.table(cluster15_8_matrix)
+cluster15_8_matrix
+plot(cluster15_8_matrix)
+cluster15_8$V1
+
+#K = 15, cluster 15_9     
+cluster15_9 <- bb[which(bb$V146 == '9'),]
+summary(cluster15_9)
+length(cluster15_9)
+cluster15_9_avg = colMeans(cluster15_9[c(2:145)])
+plot(cluster15_9_avg)
+#Table creation
+cluster15_9_matrix <- matrix(cluster15_9_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_9_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_9_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_9_matrix <- as.table(cluster15_9_matrix)
+cluster15_9_matrix <- as.table(cluster15_9_matrix)
+cluster15_9_matrix
+plot(cluster15_9_matrix)
+cluster15_9$V1
+
+#K = 15, cluster 15_10     
+cluster15_10 <- bb[which(bb$V146 == '10'),]
+summary(cluster15_10)
+length(cluster15_10)
+cluster15_10_avg = colMeans(cluster15_10[c(2:145)])
+plot(cluster15_10_avg)
+#Table creation
+cluster15_10_matrix <- matrix(cluster15_10_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_10_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_10_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_10_matrix <- as.table(cluster15_10_matrix)
+cluster15_10_matrix <- as.table(cluster15_10_matrix)
+cluster15_10_matrix
+plot(cluster15_10_matrix)
+cluster15_10$V1
+
+#K = 15, cluster 15_11     
+cluster15_11 <- bb[which(bb$V146 == '11'),]
+summary(cluster15_11)
+length(cluster15_11)
+cluster15_11_avg = colMeans(cluster15_11[c(2:145)])
+plot(cluster15_11_avg)
+#Table creation
+cluster15_11_matrix <- matrix(cluster15_11_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_11_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_11_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_11_matrix <- as.table(cluster15_11_matrix)
+cluster15_11_matrix <- as.table(cluster15_11_matrix)
+cluster15_11_matrix
+plot(cluster15_11_matrix)
+cluster15_11$V1
+
+#K = 15, cluster 15_12     
+cluster15_12 <- bb[which(bb$V146 == '12'),]
+summary(cluster15_12)
+length(cluster15_12)
+cluster15_12_avg = colMeans(cluster15_12[c(2:145)])
+plot(cluster15_12_avg)
+#Table creation
+cluster15_12_matrix <- matrix(cluster15_12_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_12_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_12_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_12_matrix <- as.table(cluster15_12_matrix)
+cluster15_12_matrix <- as.table(cluster15_12_matrix)
+cluster15_12_matrix
+plot(cluster15_12_matrix)
+cluster15_12$V1
+
+#K = 15, cluster 15_13     
+cluster15_13 <- bb[which(bb$V146 == '13'),]
+summary(cluster15_13)
+length(cluster15_13)
+cluster15_13_avg = colMeans(cluster15_13[c(2:145)])
+plot(cluster15_13_avg)
+#Table creation
+cluster15_13_matrix <- matrix(cluster15_13_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_13_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_13_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_13_matrix <- as.table(cluster15_13_matrix)
+cluster15_13_matrix <- as.table(cluster15_13_matrix)
+cluster15_13_matrix
+plot(cluster15_13_matrix)
+cluster15_13$V1
+
+#K = 15, cluster 15_14     
+cluster15_14 <- bb[which(bb$V146 == '14'),]
+summary(cluster15_14)
+length(cluster15_14)
+cluster15_14_avg = colMeans(cluster15_14[c(2:145)])
+plot(cluster15_14_avg)
+#Table creation
+cluster15_14_matrix <- matrix(cluster15_14_avg, ncol=12,byrow=TRUE)
+colnames(cluster15_14_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+rownames(cluster15_14_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
+cluster15_14_matrix <- as.table(cluster15_14_matrix)
+cluster15_14_matrix <- as.table(cluster15_14_matrix)
+cluster15_14_matrix
+plot(cluster15_14_matrix)
+cluster15_14$V1
+
 #####finish k=15
