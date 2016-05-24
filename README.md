@@ -3,11 +3,13 @@
 ##Goals
 * Improve the Billboard dataset chord analysis of a previous class. Also repeat this work done on the most recent Billboard Dataset.
 * Run a 15 cluster K-mean model and a Gaussian mixture model to compare previously held genre classifications. 
+* Run transitional probabilities on the clusters produced by our program.
 
-##Instructions
-1. Go into **parse.py** and change __ROOT_DIR__ variable (line 9) to the location of this repo on your computer. 
-2. Run parse.py. Output should be **chord_by_chord.csv**
-3. Run transitionprob.py. Output should be **songbysongtransprob.csv**
+##Notes
+* An order to take if running this for yourself: parse.py, transprob.py, kmeans_cluster.py 
+* Gaussian mixture modeling was dropped due to difficulty in the time frame.
+* The R script will work to get transitional probabilities of the cluster data produced by previous python programs. You can play with the data after the extraction is done.
+
 
 ##Group Tasks
 1. Edit **parse.py** to mainly remove repeating chords from consideration.
@@ -15,3 +17,7 @@
 2. Edit **readdata.py** to include our new columns  
 3. Edit **transitionprob.py** to no longer include repeated chord probabilities
 4. Change output file name to something intuitive. **songbysongtransprob.csv**
+5. Make **kmean_cluster.py**
+6. Add cluster information to songbysongtransprob.csv. Named **newchordbychord**
+7. **Gaussian clustering DROPPED**
+8. Use R to run transitional probabilites on the clusters themselves. Creating a table.
