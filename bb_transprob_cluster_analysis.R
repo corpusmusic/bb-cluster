@@ -5,7 +5,7 @@ bb[bb$V1 == 'TheRose',]
 
 ###### K-Means Cluster = 6 ######
 
-#K = 6, cluster 0      Classical?
+#K = 6, cluster 0      Circle of Fifths?
 cluster6_0 <- bb[which(bb$V147 == '0'),]
 summary(cluster6_0)
 length(cluster6_0)
@@ -17,11 +17,11 @@ colnames(cluster6_0_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V
 rownames(cluster6_0_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 cluster6_0_matrix <- as.table(cluster6_0_matrix)
 cluster6_0_matrix
-plot(cluster6_0_matrix)
+plot(cluster6_0_matrix, main = "K=6 Cluster0, Transitional Probabilities: 1st Chord -> 2nd Chord", xlab = "1st Chord Root", ylab = "2nd Chord Root")
 cluster6_0$V1
 
 
-#K = 6, cluster 1     Plagal?
+#K = 6, cluster 1     Blues?
 cluster6_1 <- bb[which(bb$V147 == '1'),]
 summary(cluster6_1)
 length(cluster6_1)
@@ -33,10 +33,10 @@ colnames(cluster6_1_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V
 rownames(cluster6_1_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 cluster6_1_matrix <- as.table(cluster6_1_matrix)
 cluster6_1_matrix
-plot(cluster6_1_matrix)
+plot(cluster6_1_matrix, main = "K=6 Cluster, Transitional Probabilities: 1st Chord -> 2nd Chord", xlab = "1st Chord Root", ylab = "2nd Chord Root")
 cluster6_1$V1
 
-#K = 6, cluster 2    Circle of Fifths?
+#K = 6, cluster 2    Random?
 cluster6_2 <- bb[which(bb$V147 == '2'),]
 summary(cluster6_2)
 length(cluster6_2)
@@ -48,9 +48,9 @@ colnames(cluster6_2_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V
 rownames(cluster6_2_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 cluster6_2_matrix <- as.table(cluster6_2_matrix)
 cluster6_2_matrix
-plot(cluster6_2_matrix)
+plot(cluster6_2_matrix, main = "K=6 Cluster2, Transitional Probabilities: 1st Chord -> 2nd Chord", xlab = "1st Chord Root", ylab = "2nd Chord Root")
 
-#K = 6, cluster 3
+#K = 6, cluster 3     V & bVII -> IV -> I? Plagal?
 cluster6_3 <- bb[which(bb$V147 == '3'),]
 summary(cluster6_3)
 length(cluster6_3)
@@ -62,9 +62,10 @@ colnames(cluster6_3_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V
 rownames(cluster6_3_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 cluster6_3_matrix <- as.table(cluster6_3_matrix)
 cluster6_3_matrix
-plot(cluster6_3_matrix)
+plot(cluster6_3_matrix, main = "K=6 Cluster3, Transitional Probabilities: 1st Chord -> 2nd Chord", xlab = "1st Chord Root", ylab = "2nd Chord Root")
+cluster6_3$V1
 
-#K = 6, cluster 4     bVII-> IV,  I->IV, little V..... look up songs, double plagal (bVII -> IV -> I)?
+#K = 6, cluster 4     Classical/Doo-wop? 
 cluster6_4 <- bb[which(bb$V147 == '4'),]
 summary(cluster6_4)
 length(cluster6_4)
@@ -75,10 +76,10 @@ cluster6_4_matrix <- matrix(cluster6_4_avg, ncol=12,byrow=TRUE)
 colnames(cluster6_4_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 rownames(cluster6_4_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 cluster6_4_matrix <- as.table(cluster6_4_matrix)
-plot(cluster6_4_matrix)
+plot(cluster6_4_matrix, main = "K=6 Cluster4, Transitional Probabilities: 1st Chord -> 2nd Chord", xlab = "1st Chord Root", ylab = "2nd Chord Root")
 cluster6_4$V1
 
-#K = 6, cluster 5     everything -> I, tonic lovers (: ...?  look up songs
+#K = 6, cluster 5     Modal or Rock_Tonal/minor? pre-dom -> bVII/V -> I
 cluster6_5 <- bb[which(bb$V147 == '5'),]
 summary(cluster6_5)
 length(cluster6_5)
@@ -90,7 +91,12 @@ colnames(cluster6_5_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V
 rownames(cluster6_5_matrix) <- c("I", "bII", "II", "bIII", "III", "IV", "bV", "V", "bVI", "VI", "bVII", "VII")
 cluster6_5_matrix <- as.table(cluster6_5_matrix)
 cluster6_5_matrix
-plot(cluster6_5_matrix)
+plot(cluster6_5_matrix, main = "K=6 Cluster5, Transitional Probabilities: 1st Chord -> 2nd Chord", xlab = "1st Chord Root", ylab = "2nd Chord Root")
+cluster6_5$V1
+
+
+
+
 
 
 ###### K-Means Cluster = 15 ######
