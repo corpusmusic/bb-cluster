@@ -31,7 +31,7 @@ for title, cluster in zip(Y, km.labels_):
 """Write temp file outputs"""
 
 csvfile = 'chord_by_chord.csv'
-with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:
+with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:                #temp file for k = 6
     reader = csv.reader(fin, lineterminator='\n')
     writer = csv.writer(fout, lineterminator='\n')
     for song in reader:
@@ -40,7 +40,7 @@ with open(csvfile, 'rb') as fin, open('cluster_'+csvfile, 'wb') as fout:
             writer.writerow(song)
 
 csvfile2 = 'songbysongtransprob.csv'
-with open(csvfile2, 'rb') as fin, open('cluster_'+csvfile2, 'wb') as fout:
+with open(csvfile2, 'rb') as fin, open('cluster_'+csvfile2, 'wb') as fout:              #temp file for k = 6
     reader = csv.reader(fin, lineterminator='\n')
     writer = csv.writer(fout, lineterminator='\n')
     for song in reader:
@@ -78,6 +78,3 @@ with open(csvfile2, 'rb') as fin, open('new_'+csvfile2, 'wb') as fout:
         if len(song) > 0:
             song.append(get_cluster(song[0]))
             writer.writerow(song)
-
-#os.remove('cluster_chord_by_chord.csv')
-#os.remove('cluster_songbysongtransprob.csv')
