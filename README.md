@@ -7,13 +7,15 @@
 
 ##Notes
 * An order to excute if running this for yourself: parse.py, transprob.py, kmeans_cluster.py, bb_transprob_cluster_analysis.R.
+	* For **parse.py**, the McGill Billboard dataset needs to be in the same root folder as this repo.
+	* **billboard-2.0-index.csv** should also be moved into the McGill Billboard folder.
 * Gaussian mixture modeling was dropped due to difficulty in the time frame.
-* The R script will work to get transitional probabilities of the cluster data produced by previous python programs. You can play with the data after the extraction is done.
+* The R script will get transitional probabilities of the cluster data produced by previous python programs. You can play with the data after the extraction is done.
 
 
 ##Group Tasks
 1. Edit **parse.py** to mainly remove repeating chords from consideration.
-  * Columns now included: song, year, artist, metre, 0-11 chord root, roman numeral form, chord symbol, quality.
+	* Columns now included: song, year, artist, metre, 0-11 chord root, roman numeral form, chord symbol, quality.
 2. Edit **readdata.py** to include our new columns.
 3. Edit **transitionprob.py** to no longer include repeated chord probabilities.
 4. Change output file name to something intuitive. **songbysongtransprob.csv**.
