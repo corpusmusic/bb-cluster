@@ -14,9 +14,6 @@
 * An order to excute if running this for yourself: parse.py, transprob.py, kmeans_cluster.py, bb_transprob_cluster_analysis.R.
 	* For **parse.py**, the McGill Billboard dataset needs to be in the same root folder as this repo.
 	* **billboard-2.0-index.csv** should also be moved into the McGill Billboard folder.
-* Blog posts discussing our analysis of the clusters:
-	* 6 Cluster Analysis: 
-	* 15 Cluster Analysis: https://medium.com/modeling-music/harmonic-progression-and-genre-as-understood-through-cluster-analysis-9566dcaf4650#.82hwxahhz
 * Gaussian mixture modeling was dropped due to difficulty in the time frame.
 * The R script will get transitional probabilities of the cluster data produced by previous python programs. You can play with the data after the extraction is done.
 
