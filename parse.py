@@ -191,33 +191,3 @@ if __name__ == '__main__':
             for title, artist, year, metre, lead_sheet, rel_chords, roman_num, quality in zip(titleList,artistList, yearList, metreList, chordList,relativeChordList,relativeRNList,chordQualityList):
                 writer.writerow([title, artist, year, metre, lead_sheet, rel_chords, roman_num, quality])
             writer.writerow([])
-
-"""
-    yearCounter = -1
-    with open('song_metadata.csv', 'wb') as csvfile:
-        writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        for song in filenames:
-            tonic = get_tonic(song)
-            songfile = open(song)
-            titleList = []
-            artistList = []
-            yearList = []
-            metreList = []
-            yearCounter += 1
-            year = yearArray[yearCounter]
-            #print year
-
-            for line in songfile:
-                chordsInPhrase =  get_chord_sequence(line)
-                title = [get_title(song).replace(" ","")]*len(chordsInPhrase)
-                artist = [get_artist(song).replace(" ","")]*len(chordsInPhrase)
-                metre = [get_metre(song).replace(" ","")]*len(chordsInPhrase)
-                titleList += title
-                artistList += artist
-                yearList.append(year)
-                metreList += metre
-
-            for title, artist, year, metre, in zip(titleList,artistList, yearList, metreList):
-                writer.writerow([title, artist, year, metre])
-            writer.writerow([])
-"""
