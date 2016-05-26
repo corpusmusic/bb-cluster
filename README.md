@@ -6,7 +6,7 @@
 * Run transitional probabilities on the clusters produced by our program.
 
 ##Notes
-* An order to take if running this for yourself: parse.py, transprob.py, kmeans_cluster.py, bb_transprob_cluster_analysis.R.
+* An order to excute if running this for yourself: parse.py, transprob.py, kmeans_cluster.py, bb_transprob_cluster_analysis.R.
 * Gaussian mixture modeling was dropped due to difficulty in the time frame.
 * The R script will work to get transitional probabilities of the cluster data produced by previous python programs. You can play with the data after the extraction is done.
 
@@ -16,9 +16,10 @@
   * Columns now included: song, year, artist, metre, 0-11 chord root, roman numeral form, chord symbol, quality.
 2. Edit **readdata.py** to include our new columns.
 3. Edit **transitionprob.py** to no longer include repeated chord probabilities.
-4. Change output file name to something intuitive. **songbysongtransprob.csv**
-5. Make **kmean_cluster.py**
-6. Add cluster information to songbysongtransprob.csv. Named **newchordbychord**
-7. **Gaussian clustering DROPPED**
-8. Use R to run transitional probabilites on each of the clusters.
-9. Analyze transitional probabilities.
+4. Change output file name to something intuitive. **songbysongtransprob.csv**.
+5. Make **kmean_cluster.py** to run KMeans cluster analysis on **songbysongtransprob.csv**.
+6. Outputs into temporary files **cluster_chordbychord.csv** and **cluster_songbysong.csv**.
+7. Add cluster information to songbysongtransprob.csv. Named **new_cluster_songbysongtransprob.csv**.
+8. **Gaussian clustering DROPPED**.
+9. Use R to run transitional probabilites on each of the clusters.
+10. Analyze transitional probabilities to identify clusters.
