@@ -5,6 +5,11 @@
 * Run a 6 and 15 cluster K-mean model and a Gaussian mixture model to compare previously held genre classifications. 
 * Run transitional probabilities on the clusters produced by our program.
 
+##Results
+[6 Cluster Analysis](https://medium.com/modeling-music/does-harmony-influence-musical-style-genre-a3b8726e5a3d#.de3u5yegd)
+
+[15 Cluster Analysis](https://medium.com/modeling-music/harmonic-progression-and-genre-as-understood-through-cluster-analysis-9566dcaf4650#.595du9oc8)
+
 ##Notes
 * An order to excute if running this for yourself: parse.py, transprob.py, kmeans_cluster.py, bb_transprob_cluster_analysis.R.
 	* For **parse.py**, the McGill Billboard dataset needs to be in the same root folder as this repo.
