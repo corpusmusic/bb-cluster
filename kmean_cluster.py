@@ -37,7 +37,7 @@ K = 1 # number of clusters
 while K <= maxClusters:
     epoch = 1 # iteration of cluster algorithm
     while epoch <= epochsPerCardinality:
-        km = KMeans(n_clusters = K, max_iter = 10000, n_init = 10000) # define the algorithm parameters
+        km = KMeans(n_clusters = K, max_iter = 10000, n_init = 10000, n_jobs = -1) # define the algorithm parameters
         km.fit(X,Y) # run cluster algorithm
         epochName = 'cluster' + str(K) + '_epoch' + str(epoch)
         inertiaData[epochName] = km.inertia_ # addd within-cluster sum-of-squares for the solution to dictionary
