@@ -83,7 +83,7 @@ var node;
 var graph_;
 var optArray = []
 
-d3.json("graph_euclidean.json", function(error, graph) {
+d3.json("graph_cosine.json", function(error, graph) {
   if (error) throw error;
 
   graphRec=JSON.parse(JSON.stringify(graph)); 
