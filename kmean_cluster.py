@@ -9,7 +9,7 @@ from sklearn.cluster import KMeans
 
 maxClusters = 15 # algorithm will run from 1 cluster to this cardinality
 outputFolder = 'cluster_output_data/' # where the output data will be stored
-inertiaFile = 'inertia.csv' # where the inertia for each epoch is recorded
+inertiaFile = 'inertia.csv' # where the inertia for each test is recorded
 
 # custom functions needed for project
 
@@ -37,7 +37,7 @@ while K <= maxClusters:
     km = KMeans(n_clusters = K, max_iter = 10000, n_init = 10000, n_jobs = -1, random_state = 42) # define the algorithm parameters
     km.fit(X,Y) # run cluster algorithm
     clusterName = 'cluster' + str(K)
-    inertiaData[clusterName] = km.inertia_ # addd within-cluster sum-of-squares for the solution to dictionary
+    inertiaData[clusterName] = km.inertia_ # add within-cluster sum-of-squares for the solution to dictionary
 
     # assemble a dictionary containing the cluster membership
     # for each song in the corpus
@@ -47,7 +47,7 @@ while K <= maxClusters:
     for title, cluster in zip(Y, km.labels_):
         clusterIdOfSong[title] = cluster
 
-    csvfile = outputFolder + clusterName + '.csv' # filename identifies the number of clusters and which epoch
+    csvfile = outputFolder + clusterName + '.csv' # filename identifies the number of clusters in the test
     with open(csvfile, 'w') as fout:
         writer = csv.writer(fout, lineterminator='\n')
         for title in clusterIdOfSong:
