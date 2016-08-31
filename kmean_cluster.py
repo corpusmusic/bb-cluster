@@ -8,7 +8,6 @@ from sklearn.cluster import KMeans
 # general parameters for project
 
 maxClusters = 15 # algorithm will run from 1 cluster to this cardinality
-epochsPerCardinality = 10 # number of epochs to run for each cardinality
 outputFolder = 'cluster_output_data/' # where the output data will be stored
 inertiaFile = 'inertia.csv' # where the inertia for each epoch is recorded
 
@@ -35,30 +34,27 @@ inertiaData = {}
 
 K = 1 # number of clusters
 while K <= maxClusters:
-    epoch = 1 # iteration of cluster algorithm
-    while epoch <= epochsPerCardinality:
-        km = KMeans(n_clusters = K, max_iter = 10000, n_init = 10000, n_jobs = -1) # define the algorithm parameters
-        km.fit(X,Y) # run cluster algorithm
-        epochName = 'cluster' + str(K) + '_epoch' + str(epoch)
-        inertiaData[epochName] = km.inertia_ # addd within-cluster sum-of-squares for the solution to dictionary
+    km = KMeans(n_clusters = K, max_iter = 10000, n_init = 10000, n_jobs = -1, random_state = 42) # define the algorithm parameters
+    km.fit(X,Y) # run cluster algorithm
+    clusterName = 'cluster' + str(K)
+    inertiaData[clusterName] = km.inertia_ # addd within-cluster sum-of-squares for the solution to dictionary
 
-        # assemble a dictionary containing the cluster membership
-        # for each song in the corpus
-        # write to file
+    # assemble a dictionary containing the cluster membership
+    # for each song in the corpus
+    # write to file
 
-        clusterIdOfSong = {}
-        for title, cluster in zip(Y, km.labels_):
-            clusterIdOfSong[title] = cluster
+    clusterIdOfSong = {}
+    for title, cluster in zip(Y, km.labels_):
+        clusterIdOfSong[title] = cluster
 
-        csvfile = outputFolder + epochName + '.csv' # filename identifies the number of clusters and which epoch
-        with open(csvfile, 'w') as fout:
-            writer = csv.writer(fout, lineterminator='\n')
-            for title in clusterIdOfSong:
-                writer.writerow((title, clusterIdOfSong[title]))
+    csvfile = outputFolder + clusterName + '.csv' # filename identifies the number of clusters and which epoch
+    with open(csvfile, 'w') as fout:
+        writer = csv.writer(fout, lineterminator='\n')
+        for title in clusterIdOfSong:
+            writer.writerow((title, clusterIdOfSong[title]))
 
     # reset for next loop
-        print(epochName, 'completed.')
-        epoch += 1
+    print(clusterName, 'completed.')
     K += 1
 
 # write inertia data to file
@@ -66,5 +62,5 @@ while K <= maxClusters:
 csvfile = outputFolder + inertiaFile
 with open(csvfile, 'w') as fout:
     writer = csv.writer(fout, lineterminator='\n')
-    for epochName in inertiaData:
-        writer.writerow((epochName, inertiaData[epochName]))
+    for clusterName in inertiaData:
+        writer.writerow((clusterName, inertiaData[clusterName]))
