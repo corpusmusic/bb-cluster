@@ -1,5 +1,7 @@
-filename = 'cluster_tables/cluster6_1.csv'
-d <- read.csv(filename)
+source_folder <- 'cluster_tables/'
+output_folder <- 'cluster_summaries/'
+filename <- 'cluster6_1.csv'
+d <- read.csv(paste(source_folder, filename, sep=''))
 summary(d)
 cm <- colMeans(d[c(2:145)])
 cmtable <- data.frame()
@@ -9,3 +11,4 @@ rownames(cmtable) <- rn
 colnames(cmtable) <- rn
 summary(cmtable)
 cmtable
+write.csv(cmtable, file = paste(output_folder, filename, sep=''))
