@@ -5,16 +5,18 @@ import os
 import scipy as sp
 from sklearn.cluster import KMeans
 
-# For computing distances between songs for visualization
+# For visualization
 
 import itertools
 from scipy.spatial import distance
 import math
+import matplotlib.pyplot as plt
 
 # general parameters for project
 
-maxClusters = 15 # algorithm will run from 1 cluster to this cardinality
+maxClusters = 1 # algorithm will run from 1 cluster to this cardinality
 outputFolder = 'cluster_output_data/' # where the output data will be stored
+visualizationFolder = 'cluster_output_viz/' # where the output data will be stored
 inertiaFile = 'inertia.csv' # where the inertia for each test is recorded
 
 # custom functions needed for project
@@ -99,21 +101,27 @@ while K <= maxClusters:
     graph_euclidean = pairs_euclidean.items()
     graph_euclidean = [(i[0], min_max_scaler(i[1], min_dist, max_dist)) for i in graph_euclidean if math.isnan(i[1]) == False]
 
-    # Plot distribution of distances
+    # Plot distribution of distances, save to png files
 
+    cosine_visualization_filename = visualizationFolder + clusterName + '_cosine.png'
+    euclidean_visualization_filename = visualizationFolder + clusterName + '_euclidean.png'
     plt.figure(figsize=(10,5))
     plt.ylabel('Number of distance pairs')
     plt.xlabel('Distance')
     plt.title('Histogram of cosine distance pairs')
     plt.hist([i[1] for i in graph_cosine], bins = 50, color = 'green')
-    plt.show()
+    # plt.show() # If this line is un-commented, savefig() below will result in a blank file
+    plt.savefig(cosine_visualization_filename)
+    print('Cosine histogram saved to', cosine_visualization_filename)
 
     plt.figure(figsize=(10,5))
     plt.ylabel('Number of distance pairs')
     plt.xlabel('Distance')
     plt.title('Histogram of euclidean distance pairs')
     plt.hist([i[1] for i in graph_euclidean], bins = 50, color = 'green')
-    plt.show()
+    # plt.show() # If this line is un-commented, savefig() below will result in a blank file
+    plt.savefig(euclidean_visualization_filename)
+    print('Euclidean histogram saved to', euclidean_visualization_filename)
 
     # Manually create JSON file
 
@@ -133,12 +141,13 @@ while K <= maxClusters:
 
     json_string = '''{''' + json_nodes + ''',''' + json_links + '''}'''
 
-    text_file = open("graph_cosine.json", "w")
+    cosine_filename = visualizationFolder + clusterName + '_cosine.json'
+    text_file = open(cosine_filename, "w")
     text_file.write(json_string)
     text_file.close()
 
     # Links using euclidean distance
-    
+
     json_links = '''"links": [''' + '\n'
     for song_pair, dist in graph_euclidean:
         if dist < 0.9:
@@ -147,7 +156,8 @@ while K <= maxClusters:
 
     json_string = '''{''' + json_nodes + ''',''' + json_links + '''}'''
 
-    text_file = open("graph_euclidean.json", "w")
+    euclidean_filename = visualizationFolder + clusterName + '_euclidean.json'
+    text_file = open(euclidean_filename, "w")
     text_file.write(json_string)
     text_file.close()
 
