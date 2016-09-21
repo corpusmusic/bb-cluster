@@ -34,7 +34,7 @@ def normalize_row(table_row):
     normalized.append(head)
     for item in table_row:
         if row_sum != 0:
-            normalized.append(float(item)/row_sum)
+            normalized.append(round(float(item)/row_sum, 3))
         else:
             normalized.append(0)
     return normalized
