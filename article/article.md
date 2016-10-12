@@ -40,19 +40,19 @@ And following is the song-by-song average for the entire corpus. (All average pr
 
 The goal of this study is to use the machine learning technique of cluster analysis in combination with ad hoc human analysis to test the hypothesis that the McGill Billboard dataset contains exemplars of multiple harmonic grammars, rather than a single "average" harmonic grammar (see above figure). In statistical terms, we hypothesize that the BB corpus is not a sample of a single population of pop songs, but rather a mixture of samples from a variety of musical styles. We also hope to produce empirical data that problematizes the equating of style and genre, something that is common in the machine learning community when addressing musical data.
 
-To test this hypothesis, we subjected the 144-dimensional bigram (chord-to-chord transition) analysis described above to a K-means cluster analysis.&nbsp;K-Means cluster analysis is an unsupervised machine-learning algorithm that takes a collection of data points, measures the Euclidean distance from each other in some predefined space, and attempts to find the tightest clusters of data points: those points (in this case, songs) that are the most near (like) each other, but the most distant from (unlike) the points in other clusters.&nbsp;This tightness-of-clusters property is a sum-of-squares statistical measurement called *inertia*.&nbsp;This gives us a tool to crack the chicken-and-egg problem described in the introduction: collect a large dataset of popular songs, define each song as a point in (144-dimension) harmonic-practice space, perform a cluster analysis of the corpus in that space, and uncover the clustering solution with the best inertia and the greatest musicological significance. Then we can analyze the songs in each cluster to find what specific harmonic practices are contained within the larger corpus, whose properties have been averaged over by the corpus-wide analysis.
+To test this hypothesis, we subjected the 144-dimensional bigram (chord-to-chord transition) analysis described above to a K-means cluster analysis. K-Means cluster analysis is an unsupervised machine-learning algorithm that takes a collection of data points, measures the Euclidean distance from each other in some predefined space, and attempts to find the tightest clusters of data points: those points (in this case, songs) that are the most near (like) each other, but the most distant from (unlike) the points in other clusters. This tightness-of-clusters property is a sum-of-squares statistical measurement called *inertia*. This gives us a tool to crack the chicken-and-egg problem described in the introduction: collect a large dataset of popular songs, define each song as a point in (144-dimension) harmonic-practice space, perform a cluster analysis of the corpus in that space, and uncover the clustering solution with the best inertia and the greatest musicological significance. Then we can analyze the songs in each cluster to find what specific harmonic practices are contained within the larger corpus, whose properties have been averaged over by the corpus-wide analysis.
 
-K-means cluster analysis, like all unsupervised machine-learning algorithms, has the advantage of the resulting clusters -- in this case, the harmonic grammars present in the corpus -- being emergent. However, the *number*&nbsp;of clusters must be predetermined by the analyst, and can be anything from one cluster (a trivial case) to 730 clusters (another trivial case, with each cluster containing a single song). How do we choose the appropriate number of clusters? (We will refer to the number of clusters as the *cardinality*&nbsp;of the clustering solution.)
+K-means cluster analysis, like all unsupervised machine-learning algorithms, has the advantage of the resulting clusters -- in this case, the harmonic grammars present in the corpus -- being emergent. However, the *number* of clusters must be predetermined by the analyst, and can be anything from one cluster (a trivial case) to 730 clusters (another trivial case, with each cluster containing a single song). How do we choose the appropriate number of clusters? (We will refer to the number of clusters as the *cardinality* of the clustering solution.)
 
-For a dataset the size of BB, it is not difficult to run the clustering algorithm multiple times with different cardinalities, even on a personal computer. (We used an eight-core Mac Pro for this study, and it was more than up to the task, running multiple clustering epochs in a matter of minutes.) Further, each clustering solution produces a single *inertia*&nbsp;value that represents the tightness of the clusters, making it easy to compare the results of even a large number of cardinalities to find the tightest fit.&nbsp;
+For a dataset the size of BB, it is not difficult to run the clustering algorithm multiple times with different cardinalities, even on a personal computer. (We used an eight-core Mac Pro for this study, and it was more than up to the task, running multiple clustering epochs in a matter of minutes.) Further, each clustering solution produces a single *inertia* value that represents the tightness of the clusters, making it easy to compare the results of even a large number of cardinalities to find the tightest fit.
 
-However, the more clusters contained in a solution, the more unwieldy the musical analysis. Harmonic "grammars" proliferate, and categories become too small to represent a meaningful generalization of a musical practice. Further, our study would also hit a *human&nbsp;*bottleneck if we were to analyze the 144 probability values in all 266,815 clusters produced by running the algorithm on each cardinality from 1 to 730. In order to find an optimal clustering solution, we need to form a specific hypothesis to test, limiting the algorithmic output to something that is both analyzable by humans and that has the potential to represent something that is musically meaningful.
+However, the more clusters contained in a solution, the more unwieldy the musical analysis. Harmonic "grammars" proliferate, and categories become too small to represent a meaningful generalization of a musical practice. Further, our study would also hit a *human* bottleneck if we were to analyze the 144 probability values in all 266,815 clusters produced by running the algorithm on each cardinality from 1 to 730. In order to find an optimal clustering solution, we need to form a specific hypothesis to test, limiting the algorithmic output to something that is both analyzable by humans and that has the potential to represent something that is musically meaningful.
 
 With that in mind, we formed two specific hypotheses based on existing research on style and genre in popular music, and sought clustering solutions in and around those hypothetical scenarios.
 
-The first hypothesis comes from Walt Everett's (2004) six "tonal systems," two of which were divided into two subsystems, rendering a potential of 6–8 harmonic grammars in music Everett categorized as "rock" (note the genre–style relationship). It is important to note that in Everett's article, he purposefully went *outside*&nbsp;the popularity charts to find songs that he believed were important or influential in rock history. This led to at least one tonal system that likely would not exist in a study that, like ours, is based entirely on the Billboard charts.&nbsp;Based on Everett's study, then, we hypothesized that there were between filve and eight harmonic (sub-)grammars in the BB corpus, and thus that a clustering solution with cardinality 5, 6, 7, or 8 would be optimal.
+The first hypothesis comes from Walt Everett's (2004) six "tonal systems," two of which were divided into two subsystems, rendering a potential of 6–8 harmonic grammars in music Everett categorized as "rock" (note the genre–style relationship). It is important to note that in Everett's article, he purposefully went *outside* the popularity charts to find songs that he believed were important or influential in rock history. This led to at least one tonal system that likely would not exist in a study that, like ours, is based entirely on the Billboard charts. Based on Everett's study, then, we hypothesized that there were between five and eight harmonic (sub-)grammars in the BB corpus, and thus that a clustering solution with cardinality 5, 6, 7, or 8 would be optimal.
 
-The second hypothesis comes from Schreiber (2015), who settled on a list of fifteen *genre*&nbsp;tags for popular music, based on user-generated tags for songs affiliated with another popular music dataset. We decided to test the hypothesis that the relationship between user-tagged genre and structural style would be strong and, therefore, there would be fifteen harmonic (sub-)grammars in the BB corpus, leading to an optimal clustering solution with cardinality 15. (Note that because we find the genre–style conflation to be problematic, and because harmonic grammar is not the only distinguishing marker of a musical style, we predicted that cardinality 15 would *not*&nbsp;likely produce the optimal clustering solution.)
+The second hypothesis comes from Schreiber (2015), who settled on a list of fifteen *genre* tags for popular music, based on user-generated tags for songs affiliated with another popular music dataset. We decided to test the hypothesis that the relationship between user-tagged genre and structural style would be strong and, therefore, there would be fifteen harmonic (sub-)grammars in the BB corpus, leading to an optimal clustering solution with cardinality 15. (Note that because we find the genre–style conflation to be problematic, and because harmonic grammar is not the only distinguishing marker of a musical style, we predicted that cardinality 15 would *not* likely produce the optimal clustering solution.)
 
 To test these hypotheses, as well as other options near to them, we constructed a set of scripts (using Python and the machine-learning toolkit SciKit-Learn) that would run the clustering algorithm for cardinalities 1–15. This would give us a base-line inertia value for a corpus-wide average (cardinality 1), as well as all of the cardinalities suggested by the Everett-based hypothesis and the Schreiber-based hypothesis, and other values between those. (We were also open to the possibility of testing a higher cardinality if the results of these tests suggested it would be useful, but as will be discussed in what follows, that was not the case.)
 
@@ -61,4 +61,127 @@ To test these hypotheses, as well as other options near to them, we constructed 
 
 # The results
 
-# The significance
+
+## Inertia values
+
+Our clustering script produced solutions with the f0llowing inertia values (lower is better):
+
+
+***insert inertia table***
+
+
+Increasing the number of clusters not surprisingly brings the inertia down. Also not surprising, the more clusters there are, the less of an impact the addition of a single cluster to the model has on the inertia value. Taken on its own, this list of inertia values suggests that the 15-cluster solution is the best of those tested, but also suggests that increasing the number of clusters still further would result in tighter, more meaningful clusters.
+
+However, we are searching for a meaningful generalization of harmonic practice. As discussed above, we want to find a balance between reflecting the nuance of each individual song (a 730-cluster solution) and the generalizability of a single grammar or common set of patterns that allows us to speak at the level of a stylistic practice. Thus we must examine the *musical* significance of the clustering solutions in addition to the statistical tightness of the clusters.
+
+## Musical analysis of the clusters
+
+### 1-cluster solution (inertia 1940.24)
+
+*[all inertia values will be rounded to two decimal places]*
+
+The 1-cluster solution is the same as analyzing the entire corpus without a clustering algorithm. It is a trivial case, but serves as a baseline for the subsequent clustering solutions. Following is a transitional probability table for the entire corpus (reproduced from above), with starting chords in the left column and arrival chords in the top row. Probabilities represent the probability of the arrival chord given the starting chord, and have been normalized so that each row sums to 1 (as explained above).
+
+***1-cluster table***
+
+We can readily see in this table that it mixes several common practices in pop/rock harmony. For example, I most often progresses to IV or V, IV to I or V, and V to I. This is already a mix of common-practice tonality (I-IV-V-I) and blues (I-IV-I-V-IV-I). A descending circle-of-fifths progression is also apparent, as VII progresses most often to III, III to VI, VI to II, II to V, and V to I. The modal/minor-key progression flat-VI flat VII I also stands out. So while this may serve as a not unhelpful summary of pop/rock harmonic practices, it could not be used to make predictions about what harmonic practices are likely to occur in a specific context, nor to guide a songwriter in the emulation of the style in a single song.
+
+
+### 2-cluster solution (inertia 1792.53)
+
+
+***2-cluster tables***
+
+Aside from a large drop in the inertia value, there is clear musical significance to this solution. While there is still a mixture of practices present in each cluster, there is also a meaningful division. Cluster 1 contains authentic, common-practice classical progressions (I tends to progress to IV, IV to V, and V to I), alongside the related descending circle-of-fifths progression, and minor-key flat-VI flat-VII I. Cluster 2 also contains this minor-key pattern, but generally emphasizes plagal and blues progressions (V-IV-I and flat-VII-IV-I). We can parse more finely while still providing helpful generalizations, but this division of pop/rock harmonic practices into authentic and plagal grammars is a helpful distinction.
+
+### 3-cluster solution (inertia 1698.93)
+
+***3-cluster tables***
+
+In the three-cluster solution, the minor-key pattern (flat-VI flat-VII I) no longer spreads across two clusters, but is contained in Cluster 2 alongside the authentic major-key "doo-wop" progression (I-VI-IV-V-I). Cluster 1 emphasizes the descending circle of fifths. Cluster 3 emphasizes plagal harmony (both the flat-VII-IV-I and the blues-based V-IV-I). Again, this seems to be a musically meaningful refinement.
+
+### 4-cluster solution (inertia 1618.68)
+
+***4-cluster tables***
+
+The 4-cluster solution seems to be a bit of a regression musically speaking. Cluster 1 emphasizes the descending circle of fifths, but the minor-key pattern has broken away from doo-wop and joined the circle of fifths in Cluster 1. Cluster 2 emphasizes plagal progressions, and Cluster 3 authentic/doo-wop harmony. Cluster 4 is another odd mixture, with both descending and ascending circle-of-fifths progressions rising to prominence. (The ascending circle of fifths is represented by the "double-plagal" flat-VII-IV-I, which is also strongly present in Cluster 2.) While there are more clusters and a lower inertia value, this clustering solution seems *less* musically meaningful than the 3-cluster solution, which has a clear division between known practices.
+
+### 5-cluster solution (inertia 1561.78)
+
+***5-cluster tables***
+
+The 5-cluster solution produces a more musically meaningful clustering than the 4-cluster solution. Cluster 1 contains plagal (including double-plagal) patterns. Cluster 2 emphasizes modal harmony, with many chords preferring to go to flat-VII, and with II, V, and flat-VII all tending to progress to I. Cluster 3 is the now-familiar descending-fifths cluster, and Cluster 4 the authentic/doo-wop (VI-IV-V-I) cluster. In Cluster 5 a new practice emerges, which we dubbed "tonic lovers." In this cluster, most of the commonly occurring chords tend to progress to I at very high probabilities. Though not a commonly discussed (sub-)grammar, this pattern recurs frequently in our cluster analysis.
+
+### 6-cluster solution (inertia 1516.65)
+
+***6-cluster tables***
+
+The 6-cluster solution contains some now well established patterns, and continues the process of refining the musical significance of the clusters. Cluster 1 is plagal, Cluster 2 authentic/doo-wop, Cluster 4 tonic lovers, Cluster 5 descending fifths, and Cluster 6 combines modal patterns with common minor-key patterns (like bVI-bVII-I). While these are straightforward and musically meaningful clusters, Cluster 3 is not. This is a cluster we could not make good sense of, and have dubbed it "miscellaneous."
+
+### 7-cluster solution (inertia 1478. 38)
+
+***7-cluster tables***
+
+The 7-cluster solution generally represents a further refinement on the 6-cluster solution. Plagal progressions occupy Clusters 1 (blues-based) and 2 (double-plagal). Cluster 3 emphasizes authentic/doo-wop, Cluster 5 minor, and Cluster 6 descending fifths. Cluster 4 is another miscellaneous cluster, and Cluster 7 fits the tonic-lovers pattern.
+
+### 8-cluster solution (inertia 1444.098)
+
+***8-cluster tables***
+
+The 8-cluster solution presents some new patterns. Several familiar (sub-)grammars are present: tonic lovers in Cluster 1, double-plagal in Cluster 2, doo-wop in Cluster 5, minor in Cluster 6, plagal (or "subdominant lovers," given the tendency of almost every chord to progress to IV most frequently) in Cluster 7, and descending fifths in Cluster 8.
+
+Two new refinements occur in this solution. First, the "authentic" harmonic patterns split into two. This is the first solution in which the doo-wop progression is exemplified not only by a tendency for VI to progress to IV, IV to V, and V to I, but *also* for I to progress to VI more often than any other chords. Thus, we see the clear emergence of a specific four-chord cycle in this cluster. Other authentic progressions come in Cluster 4, which we have dubbed "X-V-I" since several common chords (namely, II, IV, and VI) all tend to progress to V, which overwhelmingly tends to progress to I. Like the split of the authentic cluster in the 3-cluster solution into descending-fifths and authentic/doo-wop in the 4-cluster solution, this further split into descending-fifths, X-V-I, and doo-wop in the 8-cluster solution holds into the higher-cardinality solutions.
+
+Another new pattern to emerge is the descending-fifths-no-V pattern in Cluster 3). This pattern is generally characterized by a preference of VII to progress to III, III to VI, VI to II, and II *directly to I*. V is generally uncommon in this cluster. While few songs contain the VII-III-VI-II-I progression, significant fragments of it can be found in songs like "Eight Days a Week," "In-A-Gadda-Da-Vida," "Play that Funky Music," and "Silent Lucidity." Though not as resilient as some other harmonic patterns, this descending-fifths-no-V pattern does recur as the defining characteristic of clusters in some of the higher-cardinality solutions.
+
+### 9-cluster solution (inertia 1413.61)
+
+***no tables from here on out***
+
+At the 9-cluster solution and beyond, parsing becomes overly fine, and sometimes with musically confusing results. For this reason (and because of the sheer amount of tables), we will omit the probability tables from the article, but instead direct readers to our GitHub repository where those tables and other details of data can be found.
+
+The 9-cluster solution contains some familiar patterns: authentic X-V-I (or, in this case, more precisely X-IV-V-I) in Cluster 1, tonic lovers in Cluster 2, minor-key patterns in Cluster 3, double-plagal in Cluster 4, descending fifths in Cluster 5, doo-wop in Cluster 7, and blues-based plagal in Cluster 8. Cluster 6, though, it a difficult-to-categorize miscellaneous cluster. Cluster 9 contains a mixture of tonic lovers (already characterizing Cluster 2) and II-V-I progressions. It seems like II-V-I and IV-V-I might be separating at this level of clustering, but another cluster needs to be added to the mix in order to refine that division.
+
+### 10-cluster solution (inertia 1386.81)
+
+Indeed, that turns out to be the case. The 10-cluster solution emphasizes IV-V-I in Cluster 10 and II-V-I in Cluster 6. Other familiar patterns are descending fifths in Cluster 1, blues-based plagal in Cluster 2, tonic lovers in Cluster 3, doo-wop in Cluster 4, double-plagal in Cluster 5, minor-key patterns in Cluster 7, and descending-fifths-no-V in Cluster 8. Cluster 9, however, is a hard-to-define cluster that emphasizes few progressions to a significant degree besides IV-I.
+
+### 11-cluster solution (inertia 1360.44)
+
+At the 11-cluster level, a number of specific tonic-expansion patterns emerge as dominating clusters. In other words, the "tonic lovers" category begins to be parsed more finely. This is apparent in Clusters 1 and 3 (general tonic lovers), Cluster 11 (deceptive tonic lovers -- where most common chords prefer to progress to I except for V, which prefers to progress to VI), Cluster 4 (emphasizes I-V-I), and Cluster 8 (emphasizes I-II-I). While these are no doubt important harmonic patterns in the corpus (as well as important points of distinction from common-practice classical tonality), it is difficult to consider this level of parsing to be on the level of *style* or harmonic *grammar*. However, other more grammatical clusters do emerge in the 11-cluster solution alongside these tonic-expansion patterns: minor-key patterns in Cluster 2, blues-based plagal harmony in Cluster 5, double-plagal and II-V-I mixed in Cluster 6, doo-wop in Cluster 7, descending fifths in Cluster 9, and classical-like authentic harmony (with II preferring to go to IV) in Cluster 10.
+
+Given the mixture of tonic-expansion clusters and broader stylistic categories in this solution, it seems less musically useful than some of the lower-cardinality solutions.
+
+### 12-cluster solution (inertial 1337.93)
+
+The 12-cluster solution contains a number of now familiar (sub-)grammars: descending fifths in Cluster 2, doo-wop in Cluster 3, X-V-I authentic in Cluster 8, circle-of-fifths-no-V in Cluster 9, minor-key patterns in Clusters 10 and 11, and double-plagal in Cluster 12. There are also a number of tonic-lovers or tonic-expansion-based clusters: Cluster 4 (general), Cluster 6 (I-V-I), and Cluster 7 (tonic-lovers mixed again with II-V-I). "Subdominant lovers" also returns in Cluster 1. There is also a hard-to-categorize "miscellaneous" cluster in Cluster 5.
+
+### 13-cluster solution (inertia 1318.02)
+
+The 13-cluster solution contains a number of familiar (sub-)grammars: doo-wop in Cluster 4, blues-based plagal in Cluster 5, descending fifths in Cluster 6, tonic lovers in Cluster 8, IV-V-I in Cluster 9, double-plagal in Cluster 10, tonic lovers mixed with II-V-I in Cluster 12, and minor (bVI-bVII-I) in Cluster 13. There is also a new pattern I-bIII-IV-I (a minor version of the "Puff" progression) in Cluster 1, as well as a number of tonic-expansion clusters: I-IV-I in Cluster 3, I-II-I in Cluster 7, and I-V-I in Cluster 11. Finally, there is a hard-to-categorize "miscellaneous" cluster in Cluster 2, which emphasizes progressions to IV and to I, but which could not be characterized simply as X-IV-I.
+
+### 14-cluster solution (inertia 1299.14)
+
+The 14-cluster solution continues the pattern of adding clusters based on specific chord progressions, rather than practices that are general enough to be considered on the level of style. Familiar grammars include minor (bVI-bVII-I) in Cluster 1, X-V-I authentic in Clusters 2 and 5, doo-wop in Clusters 3 and 4 (Cluster 3 using IV and Cluster 4 using II as the predominant chord), double-plagal in Cluster 7, modal (X-bVII-I) in Cluster 10, and descending fifths in Cluster 14. There are also tonic-lovers and tonic-expansion clusters in Cluster 6 (I-II-I), Cluster 8 (I-IV-I and I-V-I), Cluster 9 (I-IV-I) mixed with blues-based plagal, CLuster 11 (X-IV-I and X-V-I), Cluster 12 (I-IV-I mixed with II-V-I), and Cluster 13 (I-IV-I). The splitting of coherent categories like doo-wop into multiple clusters, and the mixing of tonic-expansion patterns with authentic and plagal patterns render this a relatively unhelpful clustering solution.
+
+### 15-cluster solution (inertia 1277.28)
+
+The 15-cluster solution also contains familiar (sub-)grammars: blues-based plagal in Cluster 2, doo-wop (with IV) in Cluster 6, double-plagal in Cluster 7, authentic X-V-I in Cluster 9, minor-key (bVI-bVII-I) in Cluster 10, authentic IV-V-I in Cluster 11, descending fifths in Cluster 12, doo-wop (with II) in Cluster 13, and minor "puff" in Cluster 15. Cluster 14 orients around II-IV-V-I, similar to the authentic cluster with II-IV above. There is one new harmonic schema in this solution: the bVII-bVI-(V)-I lament progression, which exemplifies Cluster 8. There are also a number of tonic-expansion clusters: I-IV-I in Cluster 1, I-IV-I and I-V-I in Cluster 3, I-II-I in Cluster 4, and I-V-I in Cluster 5.
+
+# Discussion and interpretation
+
+With the above musical categorizations in place, we can hone in on some clustering solutions that are more optimal than others. The goal is to find a solution that balances generalizability -- the ability for a single model to represent a large number of songs -- with nuance -- avoiding the "averaging out" of distinct practices into a single representation that is of limited musical and explanatory usefulness.
+
+As hinted at above, the optimal number of clusters seems to be between five and eight. Notably, this is right where Everett's tonal systems lie (six systems, with two divided into two subsystems each for a total of eight). Each of these solutions has musical merit.
+
+The five-cluster solution divides pop/rock harmonic practices into two authentic clusters (one doo-wop-based and one descending-fifths-based), one plagal cluster, one modal/minor cluster, and one "tonic lovers." The six-cluster solution introduces a "miscellaneous" cluster. While that seems to be a step backwards, it also is appropriate to account for a number of songs that do not fit neatly into these other boxes. The seven-cluster solution is similar but replaces a single plagal cluster with a blues-based plagal cluster and a double-plagal cluster. The eight-cluster solution removes the miscellaneous cluster, divides the authentic further into fifths-based, doo-wop-based, and X-V-I, and introduces a new descending-fifths-no-V category. From the 9-cluster solution to the 15-cluster solution, these specific yet still general categories begin to give way to mixed categories, overly specific progression-based clusters, and more difficult-to-categorize clusters.
+
+It is not easy to choose a single optimal solution among these options (5-8 clusters). In one sense, the more general 5-cluster solution is ideal, as each stylistics grouping is markedly distinct. However, the divisions introduced in the 7-cluster and 8-cluster models are not only recognizable harmonic distinctions, but represent historical divergence as well. Separating double-plagal harmony from blues-based plagal harmony draws a historical line as much as (perhaps more than?) a systematic harmonic line. If forced to make a decision, we choose the 8-cluster solution, but with the very strong caveat that other desirable emphases would lead to different decisions.
+
+Overall, though, we find that the map that emerges from the exploration of clusters at a number of different cardinalities is the most instructive. Watching the categories emerge, conflate, disappear, and reappear as the number of clusters grows helps us understand pop/rock harmonic practices more than any single clustering solution. That map (Example \*\*\*) shows authentic/plagal is a helpful first distinction within pop/rock harmonic practice. It also shows how readily the descending-fifths schema emerges as an independent, resilient harmonic practice. It also shows the fraught relationship that minor-key harmony has with various major-key constructs, as predominately minor-key patterns move in and out of clusters dominated by authentic major progressions, plagal progressions, modal harmony, and its own cluster. Such a map is not a typical product of a cluster analysis, but in the case of pop/rock harmony and other somewhat subjective objects of study, such a map can provide both a helpful summary of various clustering options and a map of the hierarchy of categorical structures in the corpus that is similar to and easier to read and interpret than a hierarchical cluster of all the songs in the corpus (Example \*\*\*).
+
+***comparison to Walt Everett***
+
+***comparison to Schreiber***
+
+***conclusion***
