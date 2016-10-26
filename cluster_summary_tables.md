@@ -1,4 +1,4 @@
-cluster1_1
+## 1-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -17,7 +17,7 @@ cluster1_1
 
 
 
-cluster2_1
+## 2-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -36,7 +36,7 @@ cluster2_1
 
 
 
-cluster2_2
+## 2-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -55,7 +55,7 @@ cluster2_2
 
 
 
-cluster3_1
+## 3-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -74,7 +74,7 @@ cluster3_1
 
 
 
-cluster3_2
+## 3-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -93,7 +93,7 @@ cluster3_2
 
 
 
-cluster3_3
+## 3-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -112,7 +112,7 @@ cluster3_3
 
 
 
-cluster4_1
+## 4-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -131,7 +131,7 @@ cluster4_1
 
 
 
-cluster4_2
+## 4-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -150,7 +150,7 @@ cluster4_2
 
 
 
-cluster4_3
+## 4-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -169,7 +169,7 @@ cluster4_3
 
 
 
-cluster4_4
+## 4-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -188,7 +188,7 @@ cluster4_4
 
 
 
-cluster5_1
+## 5-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -207,7 +207,7 @@ cluster5_1
 
 
 
-cluster5_2
+## 5-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -226,7 +226,7 @@ cluster5_2
 
 
 
-cluster5_3
+## 5-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -245,7 +245,7 @@ cluster5_3
 
 
 
-cluster5_4
+## 5-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -264,7 +264,7 @@ cluster5_4
 
 
 
-cluster5_5
+## 5-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -283,7 +283,7 @@ cluster5_5
 
 
 
-cluster6_1
+## 6-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -302,7 +302,7 @@ cluster6_1
 
 
 
-cluster6_2
+## 6-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -321,7 +321,7 @@ cluster6_2
 
 
 
-cluster6_3
+## 6-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -340,7 +340,7 @@ cluster6_3
 
 
 
-cluster6_4
+## 6-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -359,7 +359,7 @@ cluster6_4
 
 
 
-cluster6_5
+## 6-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -378,7 +378,7 @@ cluster6_5
 
 
 
-cluster6_6
+## 6-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -397,7 +397,7 @@ cluster6_6
 
 
 
-cluster7_1
+## 7-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -416,7 +416,7 @@ cluster7_1
 
 
 
-cluster7_2
+## 7-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -435,7 +435,7 @@ cluster7_2
 
 
 
-cluster7_3
+## 7-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -454,7 +454,7 @@ cluster7_3
 
 
 
-cluster7_4
+## 7-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -473,7 +473,7 @@ cluster7_4
 
 
 
-cluster7_5
+## 7-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -492,7 +492,7 @@ cluster7_5
 
 
 
-cluster7_6
+## 7-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -511,7 +511,7 @@ cluster7_6
 
 
 
-cluster7_7
+## 7-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -530,7 +530,7 @@ cluster7_7
 
 
 
-cluster8_1
+## 8-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -549,7 +549,7 @@ cluster8_1
 
 
 
-cluster8_2
+## 8-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -568,7 +568,7 @@ cluster8_2
 
 
 
-cluster8_3
+## 8-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -587,7 +587,7 @@ cluster8_3
 
 
 
-cluster8_4
+## 8-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -606,7 +606,7 @@ cluster8_4
 
 
 
-cluster8_5
+## 8-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -625,7 +625,7 @@ cluster8_5
 
 
 
-cluster8_6
+## 8-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -644,7 +644,7 @@ cluster8_6
 
 
 
-cluster8_7
+## 8-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -663,7 +663,7 @@ cluster8_7
 
 
 
-cluster8_8
+## 8-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -682,7 +682,7 @@ cluster8_8
 
 
 
-cluster9_1
+## 9-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -701,7 +701,7 @@ cluster9_1
 
 
 
-cluster9_2
+## 9-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -720,7 +720,7 @@ cluster9_2
 
 
 
-cluster9_3
+## 9-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -739,7 +739,7 @@ cluster9_3
 
 
 
-cluster9_4
+## 9-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -758,7 +758,7 @@ cluster9_4
 
 
 
-cluster9_5
+## 9-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -777,7 +777,7 @@ cluster9_5
 
 
 
-cluster9_6
+## 9-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -796,7 +796,7 @@ cluster9_6
 
 
 
-cluster9_7
+## 9-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -815,7 +815,7 @@ cluster9_7
 
 
 
-cluster9_8
+## 9-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -834,7 +834,7 @@ cluster9_8
 
 
 
-cluster9_9
+## 9-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -853,7 +853,7 @@ cluster9_9
 
 
 
-cluster10_1
+## 10-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -871,7 +871,7 @@ cluster10_1
 | VII | 0.105 | 0.0 | 0.105 | 0.0 | 0.754 | 0.035 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 
 
-cluster10_10
+## 10-Cluster Solution, Cluster No. 10
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -890,7 +890,7 @@ cluster10_10
 
 
 
-cluster10_2
+## 10-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -909,7 +909,7 @@ cluster10_2
 
 
 
-cluster10_3
+## 10-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -928,7 +928,7 @@ cluster10_3
 
 
 
-cluster10_4
+## 10-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -947,7 +947,7 @@ cluster10_4
 
 
 
-cluster10_5
+## 10-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -966,7 +966,7 @@ cluster10_5
 
 
 
-cluster10_6
+## 10-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -985,7 +985,7 @@ cluster10_6
 
 
 
-cluster10_7
+## 10-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1004,7 +1004,7 @@ cluster10_7
 
 
 
-cluster10_8
+## 10-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1023,7 +1023,7 @@ cluster10_8
 
 
 
-cluster10_9
+## 10-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1042,7 +1042,7 @@ cluster10_9
 
 
 
-cluster11_1
+## 11-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1061,7 +1061,7 @@ cluster11_1
 
 
 
-cluster11_10
+## 11-Cluster Solution, Cluster No. 10
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1080,7 +1080,7 @@ cluster11_10
 
 
 
-cluster11_11
+## 11-Cluster Solution, Cluster No. 11
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1099,7 +1099,7 @@ cluster11_11
 
 
 
-cluster11_2
+## 11-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1118,7 +1118,7 @@ cluster11_2
 
 
 
-cluster11_3
+## 11-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1137,7 +1137,7 @@ cluster11_3
 
 
 
-cluster11_4
+## 11-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1156,7 +1156,7 @@ cluster11_4
 
 
 
-cluster11_5
+## 11-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1175,7 +1175,7 @@ cluster11_5
 
 
 
-cluster11_6
+## 11-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1194,7 +1194,7 @@ cluster11_6
 
 
 
-cluster11_7
+## 11-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1213,7 +1213,7 @@ cluster11_7
 
 
 
-cluster11_8
+## 11-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1232,7 +1232,7 @@ cluster11_8
 
 
 
-cluster11_9
+## 11-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1251,7 +1251,7 @@ cluster11_9
 
 
 
-cluster12_1
+## 12-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1270,7 +1270,7 @@ cluster12_1
 
 
 
-cluster12_10
+## 12-Cluster Solution, Cluster No. 10
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1289,7 +1289,7 @@ cluster12_10
 
 
 
-cluster12_11
+## 12-Cluster Solution, Cluster No. 11
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1308,7 +1308,7 @@ cluster12_11
 
 
 
-cluster12_12
+## 12-Cluster Solution, Cluster No. 12
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1327,7 +1327,7 @@ cluster12_12
 
 
 
-cluster12_2
+## 12-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1346,7 +1346,7 @@ cluster12_2
 
 
 
-cluster12_3
+## 12-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1365,7 +1365,7 @@ cluster12_3
 
 
 
-cluster12_4
+## 12-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1384,7 +1384,7 @@ cluster12_4
 
 
 
-cluster12_5
+## 12-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1403,7 +1403,7 @@ cluster12_5
 
 
 
-cluster12_6
+## 12-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1422,7 +1422,7 @@ cluster12_6
 
 
 
-cluster12_7
+## 12-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1441,7 +1441,7 @@ cluster12_7
 
 
 
-cluster12_8
+## 12-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1460,7 +1460,7 @@ cluster12_8
 
 
 
-cluster12_9
+## 12-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1479,7 +1479,7 @@ cluster12_9
 
 
 
-cluster13_1
+## 13-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1498,7 +1498,7 @@ cluster13_1
 
 
 
-cluster13_10
+## 13-Cluster Solution, Cluster No. 10
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1517,7 +1517,7 @@ cluster13_10
 
 
 
-cluster13_11
+## 13-Cluster Solution, Cluster No. 11
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1536,7 +1536,7 @@ cluster13_11
 
 
 
-cluster13_12
+## 13-Cluster Solution, Cluster No. 12
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1555,7 +1555,7 @@ cluster13_12
 
 
 
-cluster13_13
+## 13-Cluster Solution, Cluster No. 13
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1574,7 +1574,7 @@ cluster13_13
 
 
 
-cluster13_2
+## 13-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1593,7 +1593,7 @@ cluster13_2
 
 
 
-cluster13_3
+## 13-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1612,7 +1612,7 @@ cluster13_3
 
 
 
-cluster13_4
+## 13-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1631,7 +1631,7 @@ cluster13_4
 
 
 
-cluster13_5
+## 13-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1650,7 +1650,7 @@ cluster13_5
 
 
 
-cluster13_6
+## 13-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1669,7 +1669,7 @@ cluster13_6
 
 
 
-cluster13_7
+## 13-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1688,7 +1688,7 @@ cluster13_7
 
 
 
-cluster13_8
+## 13-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1707,7 +1707,7 @@ cluster13_8
 
 
 
-cluster13_9
+## 13-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1726,7 +1726,7 @@ cluster13_9
 
 
 
-cluster14_1
+## 14-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1745,7 +1745,7 @@ cluster14_1
 
 
 
-cluster14_10
+## 14-Cluster Solution, Cluster No. 10
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1764,7 +1764,7 @@ cluster14_10
 
 
 
-cluster14_11
+## 14-Cluster Solution, Cluster No. 11
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1783,7 +1783,7 @@ cluster14_11
 
 
 
-cluster14_12
+## 14-Cluster Solution, Cluster No. 12
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1802,7 +1802,7 @@ cluster14_12
 
 
 
-cluster14_13
+## 14-Cluster Solution, Cluster No. 13
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1821,7 +1821,7 @@ cluster14_13
 
 
 
-cluster14_14
+## 14-Cluster Solution, Cluster No. 14
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1840,7 +1840,7 @@ cluster14_14
 
 
 
-cluster14_2
+## 14-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1859,7 +1859,7 @@ cluster14_2
 
 
 
-cluster14_3
+## 14-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1878,7 +1878,7 @@ cluster14_3
 
 
 
-cluster14_4
+## 14-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1897,7 +1897,7 @@ cluster14_4
 
 
 
-cluster14_5
+## 14-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1916,7 +1916,7 @@ cluster14_5
 
 
 
-cluster14_6
+## 14-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1935,7 +1935,7 @@ cluster14_6
 
 
 
-cluster14_7
+## 14-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1954,7 +1954,7 @@ cluster14_7
 
 
 
-cluster14_8
+## 14-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1973,7 +1973,7 @@ cluster14_8
 
 
 
-cluster14_9
+## 14-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -1992,7 +1992,7 @@ cluster14_9
 
 
 
-cluster15_1
+## 15-Cluster Solution, Cluster No. 1
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2011,7 +2011,7 @@ cluster15_1
 
 
 
-cluster15_10
+## 15-Cluster Solution, Cluster No. 10
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2030,7 +2030,7 @@ cluster15_10
 
 
 
-cluster15_11
+## 15-Cluster Solution, Cluster No. 11
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2049,7 +2049,7 @@ cluster15_11
 
 
 
-cluster15_12
+## 15-Cluster Solution, Cluster No. 12
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2068,7 +2068,7 @@ cluster15_12
 
 
 
-cluster15_13
+## 15-Cluster Solution, Cluster No. 13
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2087,7 +2087,7 @@ cluster15_13
 
 
 
-cluster15_14
+## 15-Cluster Solution, Cluster No. 14
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2106,7 +2106,7 @@ cluster15_14
 
 
 
-cluster15_15
+## 15-Cluster Solution, Cluster No. 15
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2125,7 +2125,7 @@ cluster15_15
 
 
 
-cluster15_2
+## 15-Cluster Solution, Cluster No. 2
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2144,7 +2144,7 @@ cluster15_2
 
 
 
-cluster15_3
+## 15-Cluster Solution, Cluster No. 3
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2163,7 +2163,7 @@ cluster15_3
 
 
 
-cluster15_4
+## 15-Cluster Solution, Cluster No. 4
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2182,7 +2182,7 @@ cluster15_4
 
 
 
-cluster15_5
+## 15-Cluster Solution, Cluster No. 5
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2201,7 +2201,7 @@ cluster15_5
 
 
 
-cluster15_6
+## 15-Cluster Solution, Cluster No. 6
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2220,7 +2220,7 @@ cluster15_6
 
 
 
-cluster15_7
+## 15-Cluster Solution, Cluster No. 7
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2239,7 +2239,7 @@ cluster15_7
 
 
 
-cluster15_8
+## 15-Cluster Solution, Cluster No. 8
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -2258,7 +2258,7 @@ cluster15_8
 
 
 
-cluster15_9
+## 15-Cluster Solution, Cluster No. 9
 
 |  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
 | --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
