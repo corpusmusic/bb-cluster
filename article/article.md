@@ -42,8 +42,21 @@ Following is a sample bigram analysis for a single song, represented as a 12x12 
 
 And following is the song-by-song average for the entire corpus. (All average probability tables in this article have been normalized so that each row sums to 1. Because some songs will have zeroes for each value in a row, not all averages will sum to 1 without this normalization, leading to difficulty reading and interpreting the tables. Normalized tables make both within-table and cross-table comparisons easier.)
 
-
-***whole-corpus probability table***
+|  | I | bII | II | bIII | III | IV | bV | V | bVI | VI | bVII | VII |
+| --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| I | 0.0 | 0.005 | 0.089 | 0.044 | 0.031 | 0.347 | 0.002 | 0.227 | 0.049 | 0.107 | 0.092 | 0.007 |
+| bII | 0.441 | 0.0 | 0.159 | 0.043 | 0.058 | 0.038 | 0.066 | 0.087 | 0.055 | 0.0 | 0.038 | 0.014 |
+| II | 0.228 | 0.02 | 0.0 | 0.009 | 0.056 | 0.125 | 0.002 | 0.465 | 0.01 | 0.05 | 0.031 | 0.003 |
+| bIII | 0.162 | 0.043 | 0.114 | 0.0 | 0.019 | 0.255 | 0.0 | 0.092 | 0.131 | 0.009 | 0.167 | 0.007 |
+| III | 0.06 | 0.012 | 0.162 | 0.036 | 0.0 | 0.279 | 0.006 | 0.084 | 0.0 | 0.346 | 0.005 | 0.008 |
+| IV | 0.504 | 0.001 | 0.052 | 0.027 | 0.039 | 0.0 | 0.007 | 0.268 | 0.024 | 0.026 | 0.05 | 0.001 |
+| bV | 0.216 | 0.059 | 0.054 | 0.007 | 0.027 | 0.216 | 0.0 | 0.23 | 0.056 | 0.0 | 0.041 | 0.095 |
+| V | 0.618 | 0.001 | 0.04 | 0.005 | 0.03 | 0.196 | 0.005 | 0.0 | 0.028 | 0.053 | 0.024 | 0.001 |
+| bVI | 0.213 | 0.022 | 0.002 | 0.093 | 0.003 | 0.096 | 0.02 | 0.214 | 0.0 | 0.045 | 0.286 | 0.006 |
+| VI | 0.153 | 0.007 | 0.273 | 0.001 | 0.094 | 0.286 | 0.001 | 0.132 | 0.017 | 0.0 | 0.028 | 0.008 |
+| bVII | 0.399 | 0.001 | 0.013 | 0.057 | 0.006 | 0.289 | 0.0 | 0.103 | 0.084 | 0.041 | 0.0 | 0.007 |
+| VII | 0.209 | 0.03 | 0.045 | 0.03 | 0.414 | 0.092 | 0.045 | 0.03 | 0.0 | 0.046 | 0.06 | 0.0 |
+[Whole-corpus average probability of the occurrence of a target chord (top row) given a previous chord (left column).]
 
 # Analytical methods
 
