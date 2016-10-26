@@ -1,3 +1,12 @@
+latex input:	mmd-article-header
+Title:	A cluster analysis of harmony in the McGill Billboard data set
+Subtitle:
+Author:	Kris P. Shaffer, et al.
+Base Header Level:	2
+latex mode:	memoir
+latex input:	mmd-article-begin-doc
+latex footer:	mmd-memoir-footer
+
 # Introduction: Recent studies
 
 What is rock? Is it a genre? a style? a conglomeration of genres and subgenres, styles and substyles? Is it a single entity at all? Or is it such a diffuse and subjective category that study of its underlying structure is doomed to failure?
