@@ -135,24 +135,11 @@ However, we are searching for a meaningful generalization of harmonic practice. 
 
 ### 1-cluster solution (inertia 1940.24)
 
-The 1-cluster solution is the same as analyzing the entire corpus without a clustering algorithm. It is a trivial case, but serves as a base-line for the subsequent clustering solutions. Following is a transitional probability table for the entire corpus (reproduced from above), with starting chords in the left column and arrival chords in the top row. Probabilities represent the probability of the arrival chord (top row) given the starting chord (left column), and have been normalized so that each row sums to 1 (as explained above).
+The 1-cluster solution is the same as analyzing the entire corpus without a clustering algorithm. It is a trivial case, but serves as a base-line for the subsequent clustering solutions. Following is a visualization of transitional probabilities for the entire corpus, with starting chords on the X axis and arrival chords denoted by color. Bar heights represent the probability of the arrival chord given the starting chord, and have been normalized so that each column sums to 1 (as explained above).
 
-|  | I | ♭II | II | ♭III | III | IV | ♭V | V | ♭VI | VI | ♭VII | VII |
-| --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| I | 0.0 | 0.005 | 0.089 | 0.044 | 0.031 | 0.347 | 0.002 | 0.227 | 0.049 | 0.107 | 0.092 | 0.007 |
-| ♭II | 0.441 | 0.0 | 0.159 | 0.043 | 0.058 | 0.038 | 0.066 | 0.087 | 0.055 | 0.0 | 0.038 | 0.014 |
-| II | 0.228 | 0.02 | 0.0 | 0.009 | 0.056 | 0.125 | 0.002 | 0.465 | 0.01 | 0.05 | 0.031 | 0.003 |
-| ♭III | 0.162 | 0.043 | 0.114 | 0.0 | 0.019 | 0.255 | 0.0 | 0.092 | 0.131 | 0.009 | 0.167 | 0.007 |
-| III | 0.06 | 0.012 | 0.162 | 0.036 | 0.0 | 0.279 | 0.006 | 0.084 | 0.0 | 0.346 | 0.005 | 0.008 |
-| IV | 0.504 | 0.001 | 0.052 | 0.027 | 0.039 | 0.0 | 0.007 | 0.268 | 0.024 | 0.026 | 0.05 | 0.001 |
-| ♭V | 0.216 | 0.059 | 0.054 | 0.007 | 0.027 | 0.216 | 0.0 | 0.23 | 0.056 | 0.0 | 0.041 | 0.095 |
-| V | 0.618 | 0.001 | 0.04 | 0.005 | 0.03 | 0.196 | 0.005 | 0.0 | 0.028 | 0.053 | 0.024 | 0.001 |
-| ♭VI | 0.213 | 0.022 | 0.002 | 0.093 | 0.003 | 0.096 | 0.02 | 0.214 | 0.0 | 0.045 | 0.286 | 0.006 |
-| VI | 0.153 | 0.007 | 0.273 | 0.001 | 0.094 | 0.286 | 0.001 | 0.132 | 0.017 | 0.0 | 0.028 | 0.008 |
-| ♭VII | 0.399 | 0.001 | 0.013 | 0.057 | 0.006 | 0.289 | 0.0 | 0.103 | 0.084 | 0.041 | 0.0 | 0.007 |
-| VII | 0.209 | 0.03 | 0.045 | 0.03 | 0.414 | 0.092 | 0.045 | 0.03 | 0.0 | 0.046 | 0.06 | 0.0 |
-[**1-cluster solution, cluster 1.** Average probability of the occurrence of a target chord (top row) given a previous chord (left column).]
+**1-cluster solution, cluster 1.** Average probability of the occurrence of a target chord (denoted by color) given a starting chord (x axis).
 
+![](../plots/cluster1_1.png)
 
 We can readily see in this table that it mixes several common practices in pop/rock harmony. For example, I most often progresses to IV or V, IV to I or V, and V to I. This is already a mix of common-practice tonality (I–IV–V–I) and blues (I–IV–I–V–IV–I). A descending circle-of-fifths progression is also apparent, as VII progresses most often to III, III to VI, VI to II, II to V, and V to I. The modal/minor-key progression ♭VI–♭VII–I also stands out. So while this may serve as a not unhelpful summary of pop/rock harmonic practices, it could not be used to make predictions about what harmonic practices are likely to occur in a specific context, nor to guide a songwriter in the emulation of the style in a single song.
 
@@ -161,40 +148,13 @@ We can readily see in this table that it mixes several common practices in pop/r
 
 Aside from a large drop in the inertia value, there is clear musical significance to this solution. While there is still a mixture of practices present in each cluster, there is also a meaningful division. Cluster 1 contains authentic, common-practice classical progressions (I tends to progress to IV, IV to V, and V to I), alongside the related descending circle-of-fifths progression, and minor-key ♭VI–♭VII–I. Sample songs include "Will You Love Me Tomorrow" by The Shirelles (1961), "Help!" by The Beatles (1965), "Hocus Pocus" by Focus (1973), "Heartbreaker" by Pat Benetar (1980), and "Need You Tonight" by INXS (1988). Cluster 2 also contains this minor-key pattern, but generally emphasizes plagal and blues progressions (V–IV–I and ♭VII–IV–I), as in "The Twist" by Chubby Checker (1962), "Dream Police" by Cheap Trick (1979), and "White Wedding" by Billy Idol (1983). We can parse more finely while still providing helpful generalizations, but this division of pop/rock harmonic practices into authentic and plagal grammars is a helpful distinction.
 
-|  | I | ♭II | II | ♭III | III | IV | ♭V | V | ♭VI | VI | ♭VII | VII |
-| --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| I | 0.0 | 0.003 | 0.099 | 0.031 | 0.03 | 0.343 | 0.004 | 0.247 | 0.03 | 0.158 | 0.047 | 0.008 |
-| ♭II | 0.538 | 0.0 | 0.214 | 0.024 | 0.0 | 0.048 | 0.033 | 0.119 | 0.024 | 0.0 | 0.0 | 0.0 |
-| II | 0.155 | 0.018 | 0.0 | 0.008 | 0.037 | 0.086 | 0.002 | 0.611 | 0.014 | 0.028 | 0.037 | 0.004 |
-| ♭III | 0.112 | 0.044 | 0.142 | 0.0 | 0.007 | 0.262 | 0.0 | 0.143 | 0.126 | 0.004 | 0.16 | 0.0 |
-| III | 0.039 | 0.011 | 0.127 | 0.04 | 0.0 | 0.292 | 0.009 | 0.061 | 0.0 | 0.408 | 0.006 | 0.007 |
-| IV | 0.377 | 0.002 | 0.064 | 0.024 | 0.042 | 0.0 | 0.007 | 0.398 | 0.021 | 0.021 | 0.044 | 0.001 |
-| ♭V | 0.238 | 0.0 | 0.048 | 0.0 | 0.048 | 0.238 | 0.0 | 0.262 | 0.024 | 0.0 | 0.0 | 0.143 |
-| V | 0.816 | 0.001 | 0.036 | 0.002 | 0.015 | 0.072 | 0.001 | 0.0 | 0.012 | 0.036 | 0.008 | 0.001 |
-| ♭VI | 0.207 | 0.027 | 0.003 | 0.086 | 0.0 | 0.133 | 0.001 | 0.298 | 0.0 | 0.041 | 0.191 | 0.011 |
-| VI | 0.146 | 0.01 | 0.282 | 0.001 | 0.075 | 0.328 | 0.0 | 0.107 | 0.017 | 0.0 | 0.023 | 0.01 |
-| ♭VII | 0.339 | 0.002 | 0.013 | 0.047 | 0.013 | 0.221 | 0.0 | 0.186 | 0.096 | 0.077 | 0.0 | 0.005 |
-| VII | 0.233 | 0.0 | 0.07 | 0.0 | 0.521 | 0.081 | 0.023 | 0.047 | 0.0 | 0.026 | 0.0 | 0.0 |
-[**2-cluster solution, cluster 1.** Average probability of the occurrence of a target chord (top row) given a previous chord (left column).]
+**2-cluster solution, cluster 1.** Average probability of the occurrence of a target chord (denoted by color) given a starting chord (x axis).
 
+![](../plots/cluster2_1.png)
 
+**2-cluster solution, cluster 2.** Average probability of the occurrence of a target chord (denoted by color) given a starting chord (x axis).
 
-|  | I | ♭II | II | ♭III | III | IV | ♭V | V | ♭VI | VI | ♭VII | VII |
-| --: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| I | 0.0 | 0.008 | 0.075 | 0.061 | 0.032 | 0.352 | 0.0 | 0.2 | 0.075 | 0.04 | 0.151 | 0.005 |
-| ♭II | 0.293 | 0.0 | 0.073 | 0.073 | 0.146 | 0.024 | 0.117 | 0.037 | 0.102 | 0.0 | 0.098 | 0.037 |
-| II | 0.39 | 0.024 | 0.0 | 0.011 | 0.097 | 0.211 | 0.003 | 0.144 | 0.0 | 0.1 | 0.017 | 0.003 |
-| ♭III | 0.214 | 0.041 | 0.086 | 0.0 | 0.03 | 0.248 | 0.0 | 0.039 | 0.136 | 0.015 | 0.175 | 0.015 |
-| III | 0.096 | 0.015 | 0.221 | 0.03 | 0.0 | 0.259 | 0.0 | 0.123 | 0.0 | 0.242 | 0.004 | 0.01 |
-| IV | 0.673 | 0.0 | 0.037 | 0.032 | 0.035 | 0.0 | 0.008 | 0.095 | 0.029 | 0.032 | 0.058 | 0.001 |
-| ♭V | 0.188 | 0.135 | 0.062 | 0.016 | 0.0 | 0.188 | 0.0 | 0.188 | 0.099 | 0.0 | 0.094 | 0.031 |
-| V | 0.167 | 0.001 | 0.048 | 0.01 | 0.062 | 0.48 | 0.014 | 0.0 | 0.064 | 0.09 | 0.061 | 0.001 |
-| ♭VI | 0.219 | 0.017 | 0.0 | 0.099 | 0.007 | 0.059 | 0.039 | 0.131 | 0.0 | 0.048 | 0.38 | 0.0 |
-| VI | 0.17 | 0.0 | 0.254 | 0.0 | 0.133 | 0.195 | 0.004 | 0.185 | 0.016 | 0.0 | 0.039 | 0.004 |
-| ♭VII | 0.446 | 0.001 | 0.012 | 0.065 | 0.0 | 0.342 | 0.0 | 0.038 | 0.075 | 0.013 | 0.0 | 0.008 |
-| VII | 0.167 | 0.083 | 0.0 | 0.083 | 0.222 | 0.111 | 0.083 | 0.0 | 0.0 | 0.083 | 0.167 | 0.0 |
-[**2-cluster solution, cluster 2.** Average probability of the occurrence of a target chord (top row) given a previous chord (left column).]
-
+![](../plots/cluster2_2.png)
 
 ### 3-cluster solution (inertia 1698.93)
 
