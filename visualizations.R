@@ -1,12 +1,6 @@
 library('ggplot2')
 library(reshape2)
 
-normalizeProb <- function(record)  {
-  prob_sum <- sum(c[c$start==record['start'],]['rawProbability'])
-  norm_sum <- as.numeric(record['rawProbability']) / prob_sum
-  return(norm_sum)
-}
-
 build_file_name <- function(number, solution) {
   return(paste('cluster', solution, '_', number, sep = ''))
 }
@@ -16,6 +10,12 @@ generate_file_name_list <- function(cardinality) {
 }
 
 savePlotPNG <- function(solution) {
+  normalizeProb <- function(record)  {
+    prob_sum <- sum(c[c$start==record['start'],]['rawProbability'])
+    norm_sum <- as.numeric(record['rawProbability']) / prob_sum
+    return(norm_sum)
+  }
+  
   c1 <- read.csv(paste('cluster_summaries/', solution, '.csv', sep=''))
   c <- melt(c1, id.var="X")
   colnames(c) <- c('start', 'arrival', 'rawProbability')
@@ -43,4 +43,4 @@ solutions <- unlist(sapply(1:15, generate_file_name_list))
 
 sapply(solutions, savePlotPNG)
 
-savePlotPNG('cluster1_1')
+savePlotPNG('cluster2_1')
