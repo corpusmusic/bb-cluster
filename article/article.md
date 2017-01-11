@@ -372,7 +372,7 @@ It is not easy to choose a single optimal solution among these options (5–8 cl
 
 Overall, though, we find that the map that emerges from the exploration of clusters at a number of different cardinalities is the most instructive. Watching the categories emerge, conflate, disappear, and reappear as the number of clusters grows helps us understand pop/rock harmonic practices more than any single clustering solution. 
 
-![](cluster_map.png)
+![](../cluster_map.png)
 
 This map shows authentic/plagal is a helpful first distinction within pop/rock harmonic practice. It also shows how readily the descending-fifths schema emerges as an independent, resilient harmonic practice. It also shows the fraught relationship that minor-key harmony has with various major-key constructs, as predominately minor-key patterns move in and out of clusters dominated by authentic major progressions, plagal progressions, modal harmony, and its own cluster. Such a map is not a typical product of a cluster analysis, but in the case of pop/rock harmony and other somewhat subjective objects of study, such a map can provide both a helpful summary of various clustering options and a map of the hierarchy of categorical structures in the corpus that is similar to and easier to read and interpret than a hierarchical cluster of all the songs in the corpus. (Though, note that the hierarchical clustering solution pictured below suggests five large clusters, with the largest readily dividing into two–four smaller clusters, giving a total of five–eight clusters.)
 
