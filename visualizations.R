@@ -1,4 +1,4 @@
-library('ggplot2')
+library(ggplot2)
 library(reshape2)
 
 build_file_name <- function(number, solution) {
@@ -42,5 +42,3 @@ savePlotPNG <- function(solution) {
 solutions <- unlist(sapply(1:15, generate_file_name_list))
 
 sapply(solutions, savePlotPNG)
-
-savePlotPNG('cluster2_1')

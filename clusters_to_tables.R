@@ -1,6 +1,5 @@
 source_folder <- 'cluster_tables/'
 output_folder <- 'cluster_summaries/'
-filename <- 'cluster6_1.csv'
 cluster_files <- list()
 
 for (i in 1:15) {
