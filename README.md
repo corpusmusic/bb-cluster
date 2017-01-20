@@ -13,7 +13,7 @@ This repository contains Python and R code to transform and analyze harmonic pro
 - ```readdata.py``` defines file reading and parsing functions used by ```transitionprob.py```.  
 - ```solutions_to_tables.py``` merges song transition probability data with cluster analysis results, and outputs a table for each cluster containing transitional probability data for each song in that cluster to ```/cluster_tables/```.  
 - ```song_metadata_and_clusters.csv``` is a table containing song metadata and cluster assignments for each solution (1-15 clusters).  
-= ```song_metadata_and_cluster_names.csv``` is a table containing song metadata and cluster *names* ("authentic", "plagal", "doo-wop", "blues", etc.) for each solution (1-15 clusters).  
+- ```song_metadata_and_cluster_names.csv``` is a table containing song metadata and cluster *names* ("authentic", "plagal", "doo-wop", "blues", etc.) for each solution (1-15 clusters).  
 - ```song_metadata.csv``` contains metadata for each song, extracted from BB source files.  
 - ```songbysongtransprob.csv``` contains transitional probability analyses for each song in the corpus.  
 - ```transitionprob.py``` calculates the probability of occurrence of chord-to-chord transitions in each song and outputs a table with results for each song in BB.  
